@@ -31,5 +31,5 @@ For new players who have a problem understanding new character creation, or vete
 Gavin - 
 Annabel - 
 Liam - 
-Stepahnie - 
+Stephanie - 
 David - 
