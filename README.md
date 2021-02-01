@@ -2,7 +2,9 @@
 
 # Product Vision
 
-For new players who have a problem understanding new character creation, or veteran players who need a quick character before a session, GenFive is the best option. GenFive allows users a free way to quickly create a new character for the tabletop role-playing game Dungeons and DragonsTM 5th Edition. Unlike other options that are too over-encumbered with options, require accounts to operate, or cost money, our product offers easy, reliable character creation that is straightforward. The resulting character sheet can be used online as a reference while playing.
+GenFive simulates a battle between you and your party against an assortment of monsters using the Dungeons and Dragons 5th Edition Ruleset. It will track your Health, Spells, and Skills, along with those of the enemy. It will also include the option to create your own characters for use in the battle simulator.
+There is always a demand for fun games available to be played over the internet, especially during a pandemic. Many groups are no longer able to meet up in person, so there is a need for online tools to assist players in recreating the in-person experience. 
+While there are other products that individually offer the services our product will, none of them offer the complete package. Roll20 offers online battlemaps and lets players roll attacks, but you can’t directly affect another character's health, abilities, or give items. Our product is also completely free, and does not require purchasing of any additional rulesets. 
 
 ## Team Members
 
