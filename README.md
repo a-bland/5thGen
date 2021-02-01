@@ -6,11 +6,11 @@ For new players who have a problem understanding new character creation, or vete
 
 ## Team Members
 
-- Gavin Gilbert
-- Annabel Bland
-- Liam May
-- Stephanie Schweiger
-- David Hranicky
+- Gavin Gilbert (AKA ashensilverwolf)
+- Annabel Bland (AKA tazemaster)
+- Liam May (AKA scoop-diddy-whoop)
+- Stephanie Schweiger (AKA pinkjacketkid)
+- David Hranicky (AKA djhranicky)
 
 
 # Sprint 1
