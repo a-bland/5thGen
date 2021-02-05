@@ -11,8 +11,7 @@ The priority of each requirement should be either Core, Critical, or Desirable.
 | 004 | 003 | The system shall display the HP of other players in the GUI | Given I am using the GUI, when I look at other players, then I can see their health | 1 | Core | Not Verified |
 | 005 | 004 | The system shall display the inventory of the player | Given I am using the GUI, when I check my inventory, the correct inventory is displayed | 2 | Core | Not Verified |
 | 006 | 004 | The system shall store inventory data for each player | Given I am using the GUI, when I add or remove from my inventory, then my inventory is updated | 3 | Core | Not Verified |
-
-| | | | | | | |
+| 007 | 005 | The system shall store user accounts | Given I do not have an account, when I make an account, the system saves my account | 6 | Critical | Not Verified |
 | | | | | | | |
 | | | | | | | |
 | | | | | | | |
