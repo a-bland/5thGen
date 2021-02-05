@@ -22,7 +22,7 @@ While there are other products that individually offer the services our product 
 - [Requirements](https://docs.google.com/document/d/1eVYcVU-iX1d0xEWjDJVr1D-KPeIsy5gXnapfMknSaHk/)
 - [Trello Board](https://trello.com/b/LyoSdg5y/genfive)
 - [Burndown Chart](https://www.google.com/search?tbm=isch&q=sprint+burndown+chart)
-- [Velocity Chart](https://www.google.com/search?tbm=isch&q=agile+velocity+chart)
+- [Velocity Chart](https://docs.google.com/spreadsheets/d/1zmuhoPPeO9SQrvBysmMswbhSMYx34nLcfIQ-MMtw9Ho/edit?usp=sharing)
 - System Architecture
 - Source Code
 - Automated Tests
