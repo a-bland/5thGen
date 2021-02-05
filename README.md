@@ -19,7 +19,7 @@ While there are other products that individually offer the services our product 
 
 - Product Backlog
 - Sprint Backlog
-- Requirements(https://docs.google.com/document/d/1eVYcVU-iX1d0xEWjDJVr1D-KPeIsy5gXnapfMknSaHk/)
+- [Requirements](https://docs.google.com/document/d/1eVYcVU-iX1d0xEWjDJVr1D-KPeIsy5gXnapfMknSaHk/)
 - [Trello Board](https://trello.com/b/LyoSdg5y/genfive)
 - [Burndown Chart](https://www.google.com/search?tbm=isch&q=sprint+burndown+chart)
 - [Velocity Chart](https://www.google.com/search?tbm=isch&q=agile+velocity+chart)
