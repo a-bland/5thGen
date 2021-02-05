@@ -4,11 +4,11 @@ The priority of each requirement should be either Necessary, Important, or Desir
 
 | Requirement ID | User Story ID | Requirement | Acceptance Criteria | Effort | Priority | Status |
 |----------------|---------------|-------------|---------------------|--------|----------|--------|
-|            000 |           001 | The system shall have a Graphical User Interface | The system has a GUI | 1 | Necessary | Not Verified |
+|            000 |           001 | The system shall have a Graphical User Interface | Given  | 1 | Necessary | Not Verified |
 |            001 |           001 | The system shall display the player’s HP | The system displays player HP | 1 | Necessary | Not Verified |
-|            002 |           001 | Each entry in the product backlog shall have a priority | Each entry in the backlog has a priority | 1 | Necessary | Verified |
-|            003 |           001 | Each entry in the product backlog shall have an estimation of effort | Each entry in the backlog has an estimation of effort | 1 | Necessary | Verified |
-|            004 |           001 | Each entry in the product backlog shall have a validation criteria   | Each entry in the backlog has a validation criteria of the form Given/When/Then | 1 | Necessary | Verified |
+|            002 |           002 | The system shall display text in the GUI | The system shall display text in the GUI | 1 | Necessary | Not Verified |
+|            003 |           003 | The system shall show other players in the GUI | The system shows other players | 2 | Necessary | Not Verified |
+|            004 |           003 | The system shall display the HP of other players in the GUI | The system displays other player’s HP | 1 | Necessary | Verified |
 |            005 |           001 | Each entry in the product backlog shall have a status that can be one of PLANNED, WORKING, or DONE | Each entry in the backlog has a status | 1 | Necessary | Verified |
 |            005 |           001 | The product backlog shall be displayed as a table with one entry per row | The product backlog is visualized as a table with one entry per row | 1 | Necessary | Verified |
 
