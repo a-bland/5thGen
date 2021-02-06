@@ -17,8 +17,8 @@ While there are other products that individually offer the services our product 
 
 # Sprint 1
 
-- Product Backlog
-- Sprint Backlog
+- [Product Backlog](https://trello.com/b/LyoSdg5y/genfive)
+- [Sprint Backlog](https://trello.com/b/LyoSdg5y/genfive)
 - [Requirements](https://github.com/tazemaster/GenFive/blob/main/artifacts/requirements.md)
 - [Trello Board](https://trello.com/b/LyoSdg5y/genfive)
 - [Burndown Chart](https://docs.google.com/spreadsheets/d/1X3JR_Z-KlPDZuIFypAKB3onZrq-bUavyz_7wD780VBU/edit?usp=sharing)
