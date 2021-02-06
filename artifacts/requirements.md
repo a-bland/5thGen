@@ -31,19 +31,19 @@ The priority of each requirement should be either Core, Critical, or Desirable.
 | 024 | 020 | The system shall allow players the option to view player and NPC locations in a map view | Given I want to see player and NPC locations, when I use the map, I can see the correct locations | 4 | Desirable | Not Verified |
 | 025 | 021 | The system shall allow player to upload an image to represent their character(s) in map view | Given I have a character on the map, when I upload an image for that character, then the image is shown on the map | 7 | Desirable | Not Verified |
 | 026 | 022 | The system can display the speed of a character | Given I am using the GUI, when I look for my speed, then the system shows the correct speed | 2 | Core | Not Verified |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
+| 027 | 023 | A player can choose to end their turn when they are done making decisions | Given it is a players turn, when they choose to end their turn, then their turn ends | 1 | Core | Not Verified |
+| 028 | 023 | The next player in the combat order gets their turn | Given it is a players turn, when they end their turn, then the next player can take their turn | 1 | Core | Not Verified |
+| 029 | 025 | A player can initiate combat with another character | Given a player is not in combat, when they choose to initiate combat, combat starts | 1 | Core | Not Verified |
+| 030 | 026 | A player can end combat with another character | Given a player is in combat, when they choose to leave, then they exit combat | 1 | Core | Not Verified |
+| 031 | 028 | Legendary actions are used at the end of any turn | Given a character has legendary actions, when it is the end of any turn, then they can use a legendary action | 1 | Critical | Not Verified |
+| 032 | 028 | Only one legendary action can be used at a time | Given a character has legendary actions, when it uses a legendary action, it can not use another one  | 1 | Critical | Not Verified |
+| 033 | 028 | Spent legendary actions are regained at the beginning of the characters turn | Given a character has used at least one legendary actions, when it is the beginning of that characters turn, then it regains all spent legendary actions | 1 | Critical | Not Verified |
+| 034 | 029 | Show the area a character can move with their given speed | Given a character is using the map, when they want to view the area that they can move, the area they can move to is shown | 3 | Critical | Not Verified |
+| 035 | 030 | Allow a player to move up to their speed in movement | Given it is a player's turn, when they try to move, then they can move up to their speed in movement | 1 | Core | Not Verified |
+| 036 | 031 | Allow for maps to be customized | Given a player wants to change the map, when they try to change the map, then the map changes | 6 | Desirable | Not Verified |
+| 037 | 032 | Allow reactions when a character attacks another character | Given a player is attacked, when they choose to take a reaction, then they can execute their reaction | 2 | Core | Not Verified |
+| 038 | 033 | Allow characters to take an action on their turn | Given it is a player's turn, when they choose to take an action, then their action will be executed | 2 | Core | Not Verified |
+| 039 | 034 | Allow characters to make an opportunity attack on a fleeing character | Given it is another character's turn, when that character leaves a player's reach, then the player can use their reaction and make an attack of opportunity | 4 | Desirable | Not Verified |
 |  |  |  |  |  |  |  |
 |  |  |  |  |  |  |  |
 |  |  |  |  |  |  |  |
