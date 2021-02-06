@@ -19,7 +19,7 @@ While there are other products that individually offer the services our product 
 
 - Product Backlog
 - Sprint Backlog
-- [Requirements](https://docs.google.com/document/d/1eVYcVU-iX1d0xEWjDJVr1D-KPeIsy5gXnapfMknSaHk/)
+- [Requirements](https://github.com/tazemaster/GenFive/blob/main/artifacts/requirements.md)
 - [Trello Board](https://trello.com/b/LyoSdg5y/genfive)
 - [Burndown Chart](https://docs.google.com/spreadsheets/d/1X3JR_Z-KlPDZuIFypAKB3onZrq-bUavyz_7wD780VBU/edit?usp=sharing)
 - [Velocity Chart](https://docs.google.com/spreadsheets/d/1zmuhoPPeO9SQrvBysmMswbhSMYx34nLcfIQ-MMtw9Ho/edit?usp=sharing)
