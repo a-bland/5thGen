@@ -59,3 +59,4 @@ The priority of each requirement should be either Core, Critical, or Desirable.
 | 052 | 042 | The system shall half incoming damage if a character is resistant to it | Given a character is resistant to a damage type, when they take damage of that type, they take half damage rounded down | 4 | Core | Not Verified |
 | 053 | 043 | The system shall display the player’s Armor Class | Given the player is looking at the GUI, when they look at their armor class, the correct armor class is shown | 2 | Critical | Not Verified |
 | 054 | 036 | Allow characters to roll at disadvantage | Given a chatacter has to roll at disadvantage, when they roll, then they roll twice and take the lower value | 4 | Core | Not Verified |
+| 055 | 044 | The system allows a player to select someone to attack | Given it is my turn, when I select on a being, then I can choose to attack them | 4 | Core | Not Verified |
