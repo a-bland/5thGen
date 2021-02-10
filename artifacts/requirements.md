@@ -57,5 +57,5 @@ The priority of each requirement should be either Core, Critical, or Desirable.
 | 050 | 040 | The system shall allow a player to ready an action | Given the player is in battle, when they choose to ready an action, then they ready their action until their next turn | 6 | Critical | Not Verified |
 | 051 | 042 | The system shall allow a character to have resistances | Given the player has resistances, when they put the resistances in, then the system stores those resistances | 4 | Core | Not Verified |
 | 052 | 042 | The system shall half incoming damage if a character is resistant to it | Given a character is resistant to a damage type, when they take damage of that type, they take half damage rounded down | 4 | Core | Not Verified |
-| 053 | 03 | The system shall display the player’s Armor Class | Given the player is looking at the GUI, when they look at their armor class, the correct armor class is shown | 2 | Critical | Not Verified |
+| 053 | 043 | The system shall display the player’s Armor Class | Given the player is looking at the GUI, when they look at their armor class, the correct armor class is shown | 2 | Critical | Not Verified |
 | 054 | 036 | Allow characters to roll at disadvantage | Given a chatacter has to roll at disadvantage, when they roll, then they roll twice and take the lower value | 4 | Core | Not Verified |
