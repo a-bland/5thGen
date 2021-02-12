@@ -23,19 +23,14 @@ While there are other products that individually offer the services our product 
 - [Trello Board](https://trello.com/b/LyoSdg5y/genfive)
 - [Burndown Chart](https://docs.google.com/spreadsheets/d/1X3JR_Z-KlPDZuIFypAKB3onZrq-bUavyz_7wD780VBU/edit?usp=sharing)
 - [Velocity Chart](https://docs.google.com/spreadsheets/d/1zmuhoPPeO9SQrvBysmMswbhSMYx34nLcfIQ-MMtw9Ho/edit?usp=sharing)
-- System Architecture
-- Source Code
-- Automated Tests
-- Product Demonstration
 
 # Sprint 2
 
 - [Trello Board](https://trello.com/b/LyoSdg5y/genfive)
 - [Burndown Chart](https://docs.google.com/spreadsheets/d/1X3JR_Z-KlPDZuIFypAKB3onZrq-bUavyz_7wD780VBU/edit?usp=sharing)
 - [Velocity Chart](https://docs.google.com/spreadsheets/d/1zmuhoPPeO9SQrvBysmMswbhSMYx34nLcfIQ-MMtw9Ho/edit?usp=sharing)
-- System Architecture
-- Source Code
-- Automated Tests
+- [System Architecture](https://drive.google.com/drive/folders/1xNevrGv9T2ZSP1E_-vpJjsK4zyndWK6d?usp=sharing)
+- [Source Code](https://github.com/tazemaster/GenFive/blob/main/index.html)
 - [Product Demonstration](https://youtu.be/xeGLVeUbJWA)
 
 ## Task Allocation
