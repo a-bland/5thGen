@@ -28,14 +28,6 @@ While there are other products that individually offer the services our product 
 - Automated Tests
 - Product Demonstration
 
-## Task Allocation
-
-Gavin - 
-Annabel - 
-Liam - 
-Stephanie - 
-David - 
-
 # Sprint 2
 
 - [Trello Board](https://trello.com/b/LyoSdg5y/genfive)
@@ -48,8 +40,8 @@ David -
 
 ## Task Allocation
 
-Gavin - 
-Annabel - assisted with creating class diagrams, created user interface diagrams
-Liam - 
-Stephanie - assisted with creating user interface diagram and created user interface description
-David - 
+- Gavin:  assisted with class diagram, component diagram, descriptions for both, and made burndown/velocity charts.
+- Annabel: assisted with creating class diagrams, created user interface diagrams
+- Liam: 
+- Stephanie: assisted with creating user interface diagram and created user interface description
+- David: 
