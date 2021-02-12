@@ -51,5 +51,5 @@ David -
 Gavin - 
 Annabel - assisted with creating class diagrams, created user interface diagrams
 Liam - 
-Stephanie - 
+Stephanie - assisted with creating user interface diagram and created user interface description
 David - 
