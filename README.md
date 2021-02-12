@@ -38,9 +38,6 @@ David -
 
 # Sprint 2
 
-- [Product Backlog](https://trello.com/b/LyoSdg5y/genfive)
-- [Sprint Backlog](https://trello.com/b/LyoSdg5y/genfive)
-- [Requirements](https://github.com/tazemaster/GenFive/blob/main/artifacts/requirements.md)
 - [Trello Board](https://trello.com/b/LyoSdg5y/genfive)
 - [Burndown Chart](https://docs.google.com/spreadsheets/d/1X3JR_Z-KlPDZuIFypAKB3onZrq-bUavyz_7wD780VBU/edit?usp=sharing)
 - [Velocity Chart](https://docs.google.com/spreadsheets/d/1zmuhoPPeO9SQrvBysmMswbhSMYx34nLcfIQ-MMtw9Ho/edit?usp=sharing)
@@ -52,7 +49,7 @@ David -
 ## Task Allocation
 
 Gavin - 
-Annabel - 
+Annabel - assisted with creating class diagrams, created user interface diagrams
 Liam - 
 Stephanie - 
 David - 
