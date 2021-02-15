@@ -6,7 +6,7 @@
 # Component Diagram
 ![Component Diagram](https://github.com/tazemaster/GenFive/blob/main/artifacts/diagram_images/Component%20Diagram.jpg)
 
-Components Description
+# Components Description
 
 The user will be interacting with the GenFive webapp we have hosted on AWS. There will be a sign-up/sign-in page, as shown in our UI Diagram, that will act as the go between for the user and the security interface. All sign-in information will be stored in the database.
 
