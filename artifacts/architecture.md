@@ -1,9 +1,9 @@
 # Program Organization
-#System Context Diagram
+# System Context Diagram
 ![System Context Diagram](https://github.com/tazemaster/GenFive/blob/main/artifacts/diagram_images/System%20Context%20Diagram.jpg)
-#Container Diagram
+# Container Diagram
 ![Container Diagram](https://github.com/tazemaster/GenFive/blob/main/artifacts/diagram_images/Container%20Diagram.jpg)
-#Component Diagram
+# Component Diagram
 ![Component Diagram](https://github.com/tazemaster/GenFive/blob/main/artifacts/diagram_images/Component%20Diagram.jpg)
 
 Components Description
