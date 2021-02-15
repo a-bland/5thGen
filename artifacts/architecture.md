@@ -1,7 +1,7 @@
 # Program Organization
-[System Context Diagram](https://github.com/tazemaster/GenFive/blob/main/artifacts/diagram_images/System%20Context%20Diagram.jpg)
-[Container Diagram](https://github.com/tazemaster/GenFive/blob/main/artifacts/diagram_images/Container%20Diagram.jpg)
-[Component Diagram](https://github.com/tazemaster/GenFive/blob/main/artifacts/diagram_images/Component%20Diagram.jpg)
+![System Context Diagram](https://github.com/tazemaster/GenFive/blob/main/artifacts/diagram_images/System%20Context%20Diagram.jpg)
+![Container Diagram](https://github.com/tazemaster/GenFive/blob/main/artifacts/diagram_images/Container%20Diagram.jpg)
+![Component Diagram](https://github.com/tazemaster/GenFive/blob/main/artifacts/diagram_images/Component%20Diagram.jpg)
 
 Components Description
 
@@ -13,7 +13,7 @@ The user will also be able to enter the Battle Simulator. The battle simulator w
 
 # Code Design
 
-[Class Diagram](https://github.com/tazemaster/GenFive/blob/main/artifacts/diagram_images/Class%20Diagram.jpg)
+![Class Diagram](https://github.com/tazemaster/GenFive/blob/main/artifacts/diagram_images/Class%20Diagram.jpg)
 Class Descriptions
 
 The User class will constantly be in use. Any user who shows up on the webapp with the intention of using it will be required to sign up/in and the associated user class will be referenced.
@@ -47,14 +47,14 @@ The Effect Class contains information about status effects placed on characters 
 
 # Data Design
 
-[Data Diagram](https://github.com/tazemaster/GenFive/blob/main/artifacts/diagram_images/Data%20Storage.jpg)
+![Data Diagram](https://github.com/tazemaster/GenFive/blob/main/artifacts/diagram_images/Data%20Storage.jpg)
 
 # Business Rules
 
 As we are not a business, there are no external requirements we have to comply with.
 
 # User Interface Design
-[User Interface](https://github.com/tazemaster/GenFive/blob/main/artifacts/diagram_images/User%20Interface.jpg)
+![User Interface](https://github.com/tazemaster/GenFive/blob/main/artifacts/diagram_images/User%20Interface.jpg)
 
 First, the user needs to login to the website to have access to their account. If they do not have an account they can create one and be automatically logged in. 
 Once they are logged in they will be on the screen that shows all the characters they have and all the parties they are in. On that page if they click the plus sign under the parties section it will open a pop-up window that will allow them to make a new party by creating a party name, inviting 2 party members or more clicking the plus sign (they invite party members by display name or email), and selecting if they will be the dm (the dm will control monsters and maps in the battle sim) or selecting an already existing character of theirs to be in the party. If the user clicks the plus sign in the characters section they will be taken to a webpage that will allow them to make a new character. If they click save character it will take them back to the page they are on before and show that new character their in characters section. 
