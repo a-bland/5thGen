@@ -29,7 +29,7 @@ While there are other products that individually offer the services our product 
 - [Trello Board](https://trello.com/b/LyoSdg5y/genfive)
 - [Burndown Chart](https://docs.google.com/spreadsheets/d/14zUP4wrlr3NUx20r2uOj0ZdUzK_CDt_aZr29EeesweQ/edit?usp=sharing)
 - [Velocity Chart](https://docs.google.com/spreadsheets/d/1zmuhoPPeO9SQrvBysmMswbhSMYx34nLcfIQ-MMtw9Ho/edit?usp=sharing)
-- [System Architecture](https://drive.google.com/drive/folders/1xNevrGv9T2ZSP1E_-vpJjsK4zyndWK6d?usp=sharing)
+- [System Architecture](https://github.com/tazemaster/GenFive/blob/main/artifacts/architecture.md)
 - [Source Code](https://github.com/tazemaster/GenFive/blob/main/index.html)
 - [Product Demonstration](https://youtu.be/xeGLVeUbJWA)
 
