@@ -37,6 +37,6 @@ While there are other products that individually offer the services our product 
 
 - Gavin:  assisted with class diagram, component diagram, descriptions for both, and made burndown/velocity charts.
 - Annabel: assisted with creating class diagrams, created user interface diagrams
-- Liam: 
+- Liam: created database design document and reformatted requirements
 - Stephanie: assisted with creating user interface diagram and created user interface description
 - David: assisted with component diagram and fixed the product backlog and user stories on the trello board
