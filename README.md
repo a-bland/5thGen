@@ -39,4 +39,4 @@ While there are other products that individually offer the services our product 
 - Annabel: assisted with creating class diagrams, created user interface diagrams
 - Liam: 
 - Stephanie: assisted with creating user interface diagram and created user interface description
-- David: 
+- David: assisted with component diagram and fixed the product backlog and user stories on the trello board
