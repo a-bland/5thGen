@@ -1,6 +1,11 @@
 # Program Organization
 # System Context Diagram
 ![System Context Diagram](https://github.com/tazemaster/GenFive/blob/main/artifacts/diagram_images/System%20Context%20Diagram.jpg)
+
+# System Context Description
+
+The GenFive User uses the GenFive Web System to view their characters and parties, make new characters, make new parties with other users, and fight in the battle sim.
+
 # Container Diagram
 ![Container Diagram](https://github.com/tazemaster/GenFive/blob/main/artifacts/diagram_images/Container%20Diagram.jpg)
 # Component Diagram
