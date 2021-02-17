@@ -33,6 +33,15 @@ While there are other products that individually offer the services our product 
 - [Source Code](https://github.com/tazemaster/GenFive/blob/main/index.html)
 - [Product Demonstration](https://youtu.be/xeGLVeUbJWA)
 
+# Sprint 3
+
+- [Trello Board](https://trello.com/b/LyoSdg5y/genfive)
+- [Burndown Chart](https://docs.google.com/spreadsheets/d/1hk61F59RrIFJFWpMjIzdS7dMyRyPKYj689UCZpNfD8w/edit#gid=0)
+- [Velocity Chart](https://docs.google.com/spreadsheets/d/1zmuhoPPeO9SQrvBysmMswbhSMYx34nLcfIQ-MMtw9Ho/edit?usp=sharing)
+- [System Architecture](https://github.com/tazemaster/GenFive/blob/main/artifacts/architecture.md)
+- [Source Code](https://github.com/tazemaster/GenFive/blob/main/index.html)
+- [Product Demonstration]()
+
 ## Task Allocation
 
 - Gavin:  assisted with class diagram, component diagram, descriptions for both, and made burndown/velocity charts.
