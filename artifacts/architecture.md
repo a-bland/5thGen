@@ -20,9 +20,9 @@ The GenFive User uses the Web Application to view and interact with their charac
 
 The user will be interacting with the GenFive webapp we have hosted on AWS. There will be a sign-up/sign-in page, as shown in our UI Diagram, that will act as the go between for the user and the security interface. All sign-in information will be stored in the database.
 
-The user, once signed in, will have access to the character creation system where they can make whatever characters they wish. Once a character has been made, it will be sent to the database for storage. The character creation system will also be able to pull from the database to modify any pre-existing characters for higher levels, changes in equipment, etc.
+The user, once signed in, will have access to the character creation system where they can make whatever characters they wish. Once a character has been made, it will be sent to the database for storage. The character creation system will also be able to pull from the database to modify any pre-existing characters for higher levels, changes in equipment, etc., and from the D&D 5e API in order to display information in our web app.
 
-The user will also be able to enter the Battle Simulator. The battle simulator will read character and monster entries from the database as requested by the user to allow for use in the battle sim. As well, the Battle Sim System will write to the database whenever loose items are picked up by the characters from the enemies, including Currency, Weapons, Armor, and other trinkets.
+The user will also be able to enter the Battle Simulator. The battle simulator will read character and monster entries from the database as requested by the user to allow for use in the battle sim. As well, the Battle Sim System will write to the database whenever loose items are picked up by the characters from the enemies, including Currency, Weapons, Armor, and other trinkets. It will pull from the D&D 5e API so that information can be accessed mid battle to further aid the battle process
 
 # Code Design
 
