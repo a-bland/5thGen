@@ -33,6 +33,14 @@ While there are other products that individually offer the services our product 
 - [Source Code](https://github.com/tazemaster/GenFive/blob/main/index.html)
 - [Product Demonstration](https://youtu.be/xeGLVeUbJWA)
 
+## Task Allocation
+
+- Gavin:  assisted with class diagram, component diagram, descriptions for both, and made burndown/velocity charts.
+- Annabel: assisted with creating class diagrams, created user interface diagrams
+- Liam: created database design document and reformatted requirements
+- Stephanie: assisted with creating user interface diagram and created user interface description
+- David: assisted with component diagram and fixed the product backlog and user stories on the trello board
+
 # Sprint 3
 
 - [Trello Board](https://trello.com/b/LyoSdg5y/genfive)
@@ -44,8 +52,8 @@ While there are other products that individually offer the services our product 
 
 ## Task Allocation
 
-- Gavin:  assisted with class diagram, component diagram, descriptions for both, and made burndown/velocity charts.
-- Annabel: assisted with creating class diagrams, created user interface diagrams
-- Liam: created database design document and reformatted requirements
-- Stephanie: assisted with creating user interface diagram and created user interface description
-- David: assisted with component diagram and fixed the product backlog and user stories on the trello board
+- Gavin: 
+- Annabel: 
+- Liam: 
+- Stephanie: 
+- David: 
