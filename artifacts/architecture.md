@@ -11,7 +11,7 @@ The GenFive User uses the GenFive Web System to view their characters and partie
 
 # Container Description
 
-The GenFive User uses the Web Application to view and interact with their characters and the battle map to simulate combat. The Web Application writes and reads information from the Amazon Dynamo Database. The Amazon Dynamo Database stores info related to user account information, created characters, and map files.
+The GenFive User uses the Web Application to view and interact with their characters and the battle map to simulate combat. The Web Application writes and reads information from the Amazon Dynamo Database. The Amazon Dynamo Database stores info related to user account information, created characters, and map files. The Web Application also reads from a D&D 5e API so the user can refer to rules and mechanics in D&D. The D&D 5e API fecthes information about 5e mechanics.
 
 # Component Diagram
 ![Component Diagram](https://github.com/tazemaster/GenFive/blob/main/artifacts/diagram_images/Component%20Diagram.jpg)
