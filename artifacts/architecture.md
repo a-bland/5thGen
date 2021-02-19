@@ -66,7 +66,7 @@ User data will be stored within AWS in the heirarchy illustrated by the above do
 
 # Business Rules
 
-As we are not a business, there are no external requirements we have to comply with.
+Our app will be web-based. It will enable users to create a character based on the rules for Dungeons and Dragons 5th Edition. It will also enable players to simulate a battle and keep track of their character stats.
 
 # User Interface Design
 ![User Interface](https://github.com/tazemaster/GenFive/blob/main/artifacts/diagram_images/User%20Interface.jpg)
