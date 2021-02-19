@@ -11,7 +11,7 @@ The GenFive User uses the GenFive Web System to view their characters and partie
 
 # Container Description
 
-The GenFive User uses the Web Application to view and interact with their characters and the battle map to simulate combat. The Web Application writes and reads information from the Amazon Dynamo Database. The Amazon Dynamo Database stores info related to user account information, created characters, and map files.
+The GenFive User uses the Web Application to view and interact with their characters and the battle map to simulate combat. The Web Application writes and reads information from the Amazon Dynamo Database. The Amazon Dynamo Database stores info related to user account information, created characters, and map files. The Web Application also reads from a D&D 5e API so the user can refer to rules and mechanics in D&D. The D&D 5e API fecthes information about 5e mechanics.
 
 # Component Diagram
 ![Component Diagram](https://github.com/tazemaster/GenFive/blob/main/artifacts/diagram_images/Component%20Diagram.jpg)
@@ -20,9 +20,9 @@ The GenFive User uses the Web Application to view and interact with their charac
 
 The user will be interacting with the GenFive webapp we have hosted on AWS. There will be a sign-up/sign-in page, as shown in our UI Diagram, that will act as the go between for the user and the security interface. All sign-in information will be stored in the database.
 
-The user, once signed in, will have access to the character creation system where they can make whatever characters they wish. Once a character has been made, it will be sent to the database for storage. The character creation system will also be able to pull from the database to modify any pre-existing characters for higher levels, changes in equipment, etc.
+The user, once signed in, will have access to the character creation system where they can make whatever characters they wish. Once a character has been made, it will be sent to the database for storage. The character creation system will also be able to pull from the database to modify any pre-existing characters for higher levels, changes in equipment, etc., and from the D&D 5e API in order to display information in our web app.
 
-The user will also be able to enter the Battle Simulator. The battle simulator will read character and monster entries from the database as requested by the user to allow for use in the battle sim. As well, the Battle Sim System will write to the database whenever loose items are picked up by the characters from the enemies, including Currency, Weapons, Armor, and other trinkets.
+The user will also be able to enter the Battle Simulator. The battle simulator will read character and monster entries from the database as requested by the user to allow for use in the battle sim. As well, the Battle Sim System will write to the database whenever loose items are picked up by the characters from the enemies, including Currency, Weapons, Armor, and other trinkets. It will pull from the D&D 5e API so that information can be accessed mid battle to further aid the battle process
 
 # Code Design
 
@@ -66,7 +66,7 @@ User data will be stored within AWS in the heirarchy illustrated by the above do
 
 # Business Rules
 
-As we are not a business, there are no external requirements we have to comply with.
+Our app will be web-based. It will enable users to create a character based on the rules for Dungeons and Dragons 5th Edition. It will also enable players to simulate a battle and keep track of their character stats.
 
 # User Interface Design
 ![User Interface](https://github.com/tazemaster/GenFive/blob/main/artifacts/diagram_images/User%20Interface.jpg)
