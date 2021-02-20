@@ -60,7 +60,7 @@ The Effect Class contains information about status effects placed on characters 
 
 # Data Design
 
-![Data Diagram](https://github.com/tazemaster/GenFive/blob/main/artifacts/diagram_images/Data%20Storage.jpg)
+![Data Diagram](https://github.com/tazemaster/GenFive/blob/main/artifacts/diagram_images/Data%20Storage.jpeg)
 
 User data will be stored within AWS in the heirarchy illustrated by the above document.
 
