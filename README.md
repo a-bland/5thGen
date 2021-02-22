@@ -52,8 +52,8 @@ While there are other products that individually offer the services our product 
 
 ## Task Allocation
 
-- Gavin: 
+- Gavin: Out of town the whole week and was not able contribute for Sprint 3
 - Annabel: figured out how to get AWS stuff fully set up
 - Liam: Cofigured AWS amplify on local machine, and recorded demo
 - Stephanie: Added user stories to Component Diagram, added description to System Context Diagram,and added description to Container Diagram.
-- David: 
+- David: Updated architecture diagrams to include D&D 5e API, updated velocity and burndown charts
