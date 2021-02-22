@@ -22,7 +22,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-5thgen-dev-171139-deployment/amplify-cfn-templates/auth/5thgen33734397-cloudformation-template.yml",
         "logicalId": "auth5thgen33734397"
       },
-      "lastPushTimeStamp": "2021-02-20T22:24:49.167Z",
+      "lastPushTimeStamp": "2021-02-22T06:03:52.519Z",
       "output": {
         "UserPoolId": "us-east-2_YyDWXdtNp",
         "AppClientIDWeb": "5mh823n91tm7tf9mul8t023gn8",
@@ -31,7 +31,7 @@
         "IdentityPoolName": "5thgen33734397_identitypool_33734397__dev",
         "UserPoolName": "5thgen33734397_userpool_33734397"
       },
-      "lastPushDirHash": "E8iU6llNWKgvqeNC3XJja3pxihw="
+      "lastPushDirHash": "OW/mo/UWtuByiOcpSQmNFZYcYic="
     }
   },
   "api": {
@@ -55,7 +55,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-5thgen-dev-171139-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "api5thgen"
       },
-      "lastPushTimeStamp": "2021-02-20T22:24:49.167Z",
+      "lastPushTimeStamp": "2021-02-22T06:03:52.506Z",
       "lastPushDirHash": "zTYb0eRn+hxlDiy4cOSi/QVAXFY="
     }
   }
