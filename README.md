@@ -55,5 +55,5 @@ While there are other products that individually offer the services our product 
 - Gavin: 
 - Annabel: figured out how to get AWS stuff fully set up
 - Liam: Cofigured AWS amplify on local machine, and recorded demo
-- Stephanie: 
+- Stephanie: Added user stories to Component Diagram, added description to System Context Diagram,and added description to Container Diagram.
 - David: 
