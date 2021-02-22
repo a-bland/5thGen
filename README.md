@@ -53,7 +53,7 @@ While there are other products that individually offer the services our product 
 ## Task Allocation
 
 - Gavin: 
-- Annabel: 
+- Annabel: figured out how to get AWS stuff fully set up
 - Liam: 
 - Stephanie: 
 - David: 
