@@ -79,7 +79,7 @@ The roll box opens a pop up window where a person types the amount of dice to ro
 
 # Resource Management
 
-Resource management is not a major concern as we do not expect a large number of users.
+The resources in question is the data for spells, non-playable and playable character attributes, etc. These resources will be created and disposed within each instance of their respective entities and will not be able to be changed from outside of their respective classes.
 
 # Security
 
