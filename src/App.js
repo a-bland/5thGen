@@ -17,5 +17,5 @@ function App() {
 
   );
 }
-
+//export default App;
 export default withAuthenticator(App, { includeGreetings: true });
