@@ -79,7 +79,7 @@ The roll box opens a pop up window where a person types the amount of dice to ro
 
 # Resource Management
 
-Resource management is not a major concern as we do not expect a large number of users.
+The resources in question is the data for spells, non-playable and playable character attributes, etc. These resources will be created and disposed within each instance of their respective entities and will not be able to be changed from outside of their respective classes.
 
 # Security
 
@@ -127,7 +127,7 @@ We do not intend to buy any software for our site. The only thing we would consi
 
 # Reuse
 
-We will not be reusing software.
+There are two sets of classe with similar functionality. The first set contains the Weapon and Armmor classes. They have a parent class called Item. The second set contains Character and Monster classes. They share a parent class called Being.
 
 # Change Strategy
 

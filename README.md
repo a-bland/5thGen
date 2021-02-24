@@ -48,12 +48,12 @@ While there are other products that individually offer the services our product 
 - [Velocity Chart](https://docs.google.com/spreadsheets/d/1zmuhoPPeO9SQrvBysmMswbhSMYx34nLcfIQ-MMtw9Ho/edit?usp=sharing)
 - [System Architecture](https://github.com/tazemaster/GenFive/blob/main/artifacts/architecture.md)
 - [Source Code](https://github.com/tazemaster/GenFive/blob/main/index.html)
-- [Product Demonstration]()
+- [Product Demonstration](https://youtu.be/6WRm-phAYn8)
 
 ## Task Allocation
 
-- Gavin: 
+- Gavin: Out of town the whole week and was not able contribute for Sprint 3
 - Annabel: figured out how to get AWS stuff fully set up
-- Liam: 
-- Stephanie: 
-- David: 
+- Liam: Cofigured AWS amplify on local machine, and recorded demo
+- Stephanie: Added user stories to Component Diagram, added description to System Context Diagram,and added description to Container Diagram.
+- David: Updated architecture diagrams to include D&D 5e API, updated velocity and burndown charts
