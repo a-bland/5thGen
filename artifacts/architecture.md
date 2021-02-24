@@ -127,7 +127,7 @@ We do not intend to buy any software for our site. The only thing we would consi
 
 # Reuse
 
-We will not be reusing software.
+There are two sets of classe with similar functionality. The first set contains the Weapon and Armmor classes. They have a parent class called Item. The second set contains Character and Monster classes. They share a parent class called Being.
 
 # Change Strategy
 
