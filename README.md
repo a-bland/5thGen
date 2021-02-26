@@ -30,8 +30,8 @@ While there are other products that individually offer the services our product 
 - [Burndown Chart](https://docs.google.com/spreadsheets/d/14zUP4wrlr3NUx20r2uOj0ZdUzK_CDt_aZr29EeesweQ/edit?usp=sharing)
 - [Velocity Chart](https://docs.google.com/spreadsheets/d/1zmuhoPPeO9SQrvBysmMswbhSMYx34nLcfIQ-MMtw9Ho/edit?usp=sharing)
 - [System Architecture](https://github.com/tazemaster/GenFive/blob/main/artifacts/architecture.md)
-- [Source Code](https://github.com/tazemaster/GenFive/blob/main/index.html)
-- [Product Demonstration](https://youtu.be/xeGLVeUbJWA)
+- [Source Code](https://github.com/tazemaster/5thGen/tree/main/src)
+- - [Product Demonstration](https://youtu.be/xeGLVeUbJWA)
 
 ## Task Allocation
 
@@ -47,7 +47,7 @@ While there are other products that individually offer the services our product 
 - [Burndown Chart](https://docs.google.com/spreadsheets/d/1hk61F59RrIFJFWpMjIzdS7dMyRyPKYj689UCZpNfD8w/edit#gid=0)
 - [Velocity Chart](https://docs.google.com/spreadsheets/d/1zmuhoPPeO9SQrvBysmMswbhSMYx34nLcfIQ-MMtw9Ho/edit?usp=sharing)
 - [System Architecture](https://github.com/tazemaster/GenFive/blob/main/artifacts/architecture.md)
-- [Source Code](https://github.com/tazemaster/GenFive/blob/main/index.html)
+- [Source Code](https://github.com/tazemaster/5thGen/tree/main/src)
 - [Product Demonstration](https://youtu.be/6WRm-phAYn8)
 
 ## Task Allocation
@@ -64,7 +64,7 @@ While there are other products that individually offer the services our product 
 - [Burndown Chart](https://docs.google.com/spreadsheets/d/1j4rXR0bs3_8r0OXxPj1oQ3tf00jTcVJ2TbxayJ_IQEQ/edit#gid=0)
 - [Velocity Chart](https://docs.google.com/spreadsheets/d/1zmuhoPPeO9SQrvBysmMswbhSMYx34nLcfIQ-MMtw9Ho/edit?usp=sharing)
 - [System Architecture](https://github.com/tazemaster/GenFive/blob/main/artifacts/architecture.md)
-- [Source Code](https://github.com/tazemaster/GenFive/blob/main/index.html)
+- [Source Code](https://github.com/tazemaster/5thGen/tree/main/src)
 - [Product Demonstration]
 
 ## Task Allocation
