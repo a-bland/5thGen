@@ -13,9 +13,10 @@ function App() {
   return (
     <div>
       <Title>Gen Five</Title>
+      <p>Welcome to our battle simulator.</p>
     </div>
 
   );
 }
 //export default App;
-export default withAuthenticator(App, { includeGreetings: true });
+export default withAuthenticator(App, { includeGreetings: false });
