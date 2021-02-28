@@ -1,6 +1,9 @@
 import './App.css';
 import 'antd/dist/antd.css';
 import { Typography } from 'antd';
+import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import Battle from './components/Battle';
+import Home from './components/Home';
 
 import Amplify, { API, graphqlOperation } from 'aws-amplify';
 import { withAuthenticator } from 'aws-amplify-react';
@@ -11,10 +14,14 @@ const { Title } = Typography;
 
 function App() {
   return (
-    <div>
-      <Title>Gen Five</Title>
-      <p>Welcome to our battle simulator.</p>
-    </div>
+    <div className="App">
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={Home}></Route>
+          <Route path="/Battle" component={Battle}></Route>
+        </Switch>
+      </BrowserRouter>
+    </div >
 
   );
 }
