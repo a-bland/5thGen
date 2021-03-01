@@ -71,6 +71,6 @@ While there are other products that individually offer the services our product 
 
 - Gavin: Burndown/Velocity Charts and Class Diagram Associations
 - Annabel: 
-- Liam: 
+- Liam: Configure automated testing for front end and post project demo
 - Stephanie: 
 - David: 
