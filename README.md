@@ -70,7 +70,7 @@ While there are other products that individually offer the services our product 
 ## Task Allocation
 
 - Gavin: Burndown/Velocity Charts and Class Diagram Associations
-- Annabel: 
+- Annabel: Created new page and linked them together to start/end Battle mode
 - Liam: Configure automated testing for front end and post project demo
 - Stephanie: 
-- David: 
+- David: Focused on learning react and how to implement python into the code
