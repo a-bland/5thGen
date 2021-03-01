@@ -69,7 +69,7 @@ While there are other products that individually offer the services our product 
 
 ## Task Allocation
 
-- Gavin: 
+- Gavin: Burndown/Velocity Charts and Class Diagram Associations
 - Annabel: 
 - Liam: 
 - Stephanie: 
