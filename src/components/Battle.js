@@ -1,4 +1,4 @@
-//import './App.css';
+import '../App.css';
 import 'antd/dist/antd.css';
 import { Typography } from 'antd';
 
