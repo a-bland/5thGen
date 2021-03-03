@@ -65,8 +65,7 @@ While there are other products that individually offer the services our product 
 - [Velocity Chart](https://docs.google.com/spreadsheets/d/1zmuhoPPeO9SQrvBysmMswbhSMYx34nLcfIQ-MMtw9Ho/edit?usp=sharing)
 - [System Architecture](https://github.com/tazemaster/GenFive/blob/main/artifacts/architecture.md)
 - [Source Code](https://github.com/tazemaster/5thGen/tree/main/src)
-- [Product Demonstration]
-(https://youtu.be/2fJ4fWtejgs)
+- [Product Demonstration](https://youtu.be/2fJ4fWtejgs)
 
 ## Task Allocation
 
@@ -75,3 +74,20 @@ While there are other products that individually offer the services our product 
 - Liam: Configure automated testing for front end and post project demo
 - Stephanie: 
 - David: Focused on learning react and how to implement python into the code
+
+# Sprint 5
+
+- [Trello Board](https://trello.com/b/LyoSdg5y/genfive)
+- [Burndown Chart]
+- [Velocity Chart](https://docs.google.com/spreadsheets/d/1zmuhoPPeO9SQrvBysmMswbhSMYx34nLcfIQ-MMtw9Ho/edit?usp=sharing)
+- [System Architecture](https://github.com/tazemaster/GenFive/blob/main/artifacts/architecture.md)
+- [Source Code](https://github.com/tazemaster/5thGen/tree/main/src)
+- [Product Demonstration]
+
+## Task Allocation
+
+- Gavin: 
+- Annabel: 
+- Liam: 
+- Stephanie: 
+- David: 
