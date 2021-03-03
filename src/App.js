@@ -19,8 +19,8 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={Home}></Route>
-          <Route path="/Battle" component={Battle}></Route>
-          <Route path="/Creation" component={Creation}></Route>
+          <Route path="/Battle.html" component={Battle}></Route>
+          <Route path="/Creation.html" component={Creation}></Route>
         </Switch>
       </BrowserRouter>
     </div >
