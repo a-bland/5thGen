@@ -18,8 +18,8 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Switch>
-          <Route exact path="/" component={Home}></Route>
-          <Route path="/Battle.html" component={Battle}></Route>
+          <Route exact path="/" component={Battle}></Route>
+          <Route path="/Home" component={Home}></Route>
           <Route path="/Creation.html" component={Creation}></Route>
         </Switch>
       </BrowserRouter>
