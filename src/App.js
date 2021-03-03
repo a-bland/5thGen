@@ -3,6 +3,7 @@ import 'antd/dist/antd.css';
 import { Typography } from 'antd';
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import Battle from './components/Battle';
+import Creation from './components/Creation';
 import Home from './components/Home';
 
 import Amplify, { API, graphqlOperation } from 'aws-amplify';
@@ -19,11 +20,11 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home}></Route>
           <Route path="/Battle" component={Battle}></Route>
+          <Route path="/Creation" component={Creation}></Route>
         </Switch>
       </BrowserRouter>
     </div >
 
   );
 }
-//export default App;
-export default withAuthenticator(App, { includeGreetings: false });
+export default App;

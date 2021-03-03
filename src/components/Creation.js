@@ -8,17 +8,18 @@ Amplify.configure(aws_exports);
 
 const { Title } = Typography;
 
-function Battle() {
+function Creation() {
     return (
-        <div className="Battle">
-            <Title>Battle Simulator</Title>
-            <p>Hello CHARACTER NAME!</p>
+        <div className="Creation">
+            <Title>Create Your Character</Title>
+            <p>Choose wisely!</p>
+            <p>Character name: </p>
             <a href="/">
-                <button> End Battle </button>
+                <button> Save Character </button>
             </a>
         </div>
 
     );
 }
 
-export default Battle;
+export default Creation;
