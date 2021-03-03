@@ -16,7 +16,7 @@ function Creation() {
             <form action="Creation" method="post" id="CharacterCreation">
                 <input type="text" placeholder="Character Name"></input>
                 <br /><br />
-                <div class="custom-select">
+                <div class="custom-select" id="race">
                     <select>
                         <option value="0">Select race:</option>
                         <option value="1">Dwarf</option>
@@ -31,7 +31,7 @@ function Creation() {
                     </select>
                 </div>
                 <br /><br />
-                <div class="custom-select">
+                <div class="custom-select" id="class">
                     <select>
                         <option value="0">Select class:</option>
                         <option value="1">Barbarian</option>
