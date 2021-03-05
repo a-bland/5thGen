@@ -18,9 +18,9 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Switch>
-          <Route exact path="/" component={Battle}></Route>
-          <Route path="/Home" component={Home}></Route>
-          <Route path="/Creation.html" component={Creation}></Route>
+          <Route exact path="/" component={Home}></Route>
+          <Route path="/Battle.js" component={Battle}></Route>
+          <Route path="/Creation.js" component={Creation}></Route>
         </Switch>
       </BrowserRouter>
     </div >

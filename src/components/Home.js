@@ -14,10 +14,10 @@ function Home() {
         <div className="Home">
             <Title>Gen Five</Title>
             <p>Welcome to our battle simulator.</p>
-            <a href="/Creation.html">
+            <a href="/Creation.js">
                 <button> Create a Character </button></a>
             <br /><br />
-            <a href="/Battle.html">
+            <a href="/Battle.js">
                 <button> Start Battle </button></a>
         </div >
 
