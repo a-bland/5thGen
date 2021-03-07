@@ -87,7 +87,7 @@ While there are other products that individually offer the services our product 
 ## Task Allocation
 
 - Gavin: 
-- Annabel: 
+- Annabel: trying to fix XML error, testing page navigation
 - Liam: 
 - Stephanie: 
 - David: 
