@@ -86,7 +86,7 @@ While there are other products that individually offer the services our product 
 
 ## Task Allocation
 
-- Gavin: attempting and failing at learning how to integrate python code into a website
+- Gavin: attempting and failing at learning how to integrate python code into a website & Burndown/Velocity Charts
 - Annabel: trying to fix XML error, testing page navigation
 - Liam: Converting class diagrams to python to lay ground work for back end and database queuerying.
 - Stephanie: 
