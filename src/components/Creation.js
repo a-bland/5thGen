@@ -51,22 +51,22 @@ function Creation() {
                 </div>
                 <br />
                 <label for="intelligence">Intelligence </label>
-                <input type="number" min="0" max="20" id="intelligence" default="10"></input>
+                <input type="number" min="0" max="20" id="intelligence" defaultValue="10"></input>
                 <br /><br />
                 <label for="dexterity">Dexterity </label>
-                <input type="number" min="0" max="20" id="dexterity"></input>
+                <input type="number" min="0" max="20" id="dexterity" defaultValue="10"></input>
                 <br /><br />
                 <label for="charisma">Charisma </label>
-                <input type="number" min="0" max="20" id="charisma"></input>
+                <input type="number" min="0" max="20" id="charisma" defaultValue="10"></input>
                 <br /><br />
                 <label for="strength">Strength </label>
-                <input type="number" min="0" max="20" id="strength"></input>
+                <input type="number" min="0" max="20" id="strength" defaultValue="10"></input>
                 <br /><br />
                 <label for="constitution">Constitution </label>
-                <input type="number" min="0" max="20" id="constitution"></input>
+                <input type="number" min="0" max="20" id="constitution" defaultValue="10"></input>
                 <br /><br />
                 <label for="wisdom">Wisdom </label>
-                <input type="number" min="0" max="20" id="widsom"></input>
+                <input type="number" min="0" max="20" id="widsom" defaultValue="10"></input>
             </form>
             <br /><br />
             <a href="/"><button onclick="sendInfo()"> Save Character </button></a>
