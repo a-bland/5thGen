@@ -89,5 +89,5 @@ While there are other products that individually offer the services our product 
 - Gavin: attempting and failing at learning how to integrate python code into a website & Burndown/Velocity Charts
 - Annabel: trying to fix XML error, testing page navigation
 - Liam: Converting class diagrams to python to lay ground work for back end and database queuerying.
-- Stephanie: 
+- Stephanie: Sent monster and character stub. Learning GraphQL.
 - David: Dying in classes, small time available spent flailing with python
