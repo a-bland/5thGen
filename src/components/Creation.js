@@ -31,8 +31,8 @@ function Creation() {
                         <option value="9">Tiefling</option>
                     </select>
                 </div>
-                <br /><br />
-                <div class="custom-select" id="class">
+                <br />
+                <div class="custom-select" id="characterClass">
                     <select>
                         <option value="0">Select class:</option>
                         <option value="1">Barbarian</option>
@@ -49,9 +49,27 @@ function Creation() {
                         <option value="12">Wizard</option>
                     </select>
                 </div>
+                <br />
+                <label for="intelligence">Intelligence </label>
+                <input type="number" min="0" max="20" id="intelligence" default="10"></input>
+                <br /><br />
+                <label for="dexterity">Dexterity </label>
+                <input type="number" min="0" max="20" id="dexterity"></input>
+                <br /><br />
+                <label for="charisma">Charisma </label>
+                <input type="number" min="0" max="20" id="charisma"></input>
+                <br /><br />
+                <label for="strength">Strength </label>
+                <input type="number" min="0" max="20" id="strength"></input>
+                <br /><br />
+                <label for="constitution">Constitution </label>
+                <input type="number" min="0" max="20" id="constitution"></input>
+                <br /><br />
+                <label for="wisdom">Wisdom </label>
+                <input type="number" min="0" max="20" id="widsom"></input>
             </form>
             <br /><br />
-            <a href="/"><button> Save Character </button></a>
+            <a href="/"><button onclick="sendInfo()"> Save Character </button></a>
         </div >
 
     );
@@ -59,14 +77,19 @@ function Creation() {
 function sendInfo() {
     var characterName = document.getElementById("Character Name").value;
     var race = document.getElementById("race").value;
-    var jsonPayload = '{"characterName: "' + characterName + '", race: "' + race + '"}';
+    var characterClass = document.getElementById("class").value;
+    var intelligence = document.getElementById("intelligence").value;
+    var dexterity = document.getElementById("dexterity").value;
+    var charisma = document.getElementById("charisma").value;
+    var strength = document.getElementById("strength").value;
+    var wisdom = document.getElementById("wisdom").value;
+    var constitution = document.getElementById("constitution").value;
+    var jsonPayload = '{"characterName: "' + characterName + '", race: "' + race + '", class: "' + characterClass + '", intelligence: "' + intelligence + '", dexterity: "' + dexterity + '", charisma: "' + charisma + '", strength: "' + strength + '", wisdom: "' + wisdom + '", constitution: "' + constitution + '"}';
     var url = '/Create';
 
     var xhr = new XMLHttpRequest();
     xhr.open("POST", url, false);
     xhr.setRequestHeader("Content-type", "application/json; charset=UTF-8");
     xhr.send(jsonPayload);
-
 }
-
 export default Creation;
