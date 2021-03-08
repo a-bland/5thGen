@@ -82,7 +82,7 @@ While there are other products that individually offer the services our product 
 - [Velocity Chart](https://docs.google.com/spreadsheets/d/1zmuhoPPeO9SQrvBysmMswbhSMYx34nLcfIQ-MMtw9Ho/edit?usp=sharing)
 - [System Architecture](https://github.com/tazemaster/GenFive/blob/main/artifacts/architecture.md)
 - [Source Code](https://github.com/tazemaster/5thGen/tree/main/src)
-- [Product Demonstration] (https://youtu.be/2fJ4fWtejgs)
+- [Product Demonstration](https://youtu.be/2fJ4fWtejgs)
 
 ## Task Allocation
 
@@ -90,4 +90,4 @@ While there are other products that individually offer the services our product 
 - Annabel: trying to fix XML error, testing page navigation
 - Liam: Converting class diagrams to python to lay ground work for back end and database queuerying.
 - Stephanie: 
-- David: 
+- David: Dying in classes, small time available spent flailing with python
