@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import '../App.css';
 import 'antd/dist/antd.css';
 import { Typography } from 'antd';
@@ -11,7 +12,7 @@ const { Title } = Typography;
 function Battle() {
     return (
         <div className="Battle">
-            <Title>Battle Simulator</Title>
+            <h1>Battle Simulator</h1>
             <p>Hello CHARACTER NAME!</p>
             <a href="/">
                 <button> End Battle </button>

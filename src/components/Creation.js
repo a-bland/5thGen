@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import '../App.css';
 import 'antd/dist/antd.css';
 import { Typography } from 'antd';
@@ -11,7 +12,7 @@ const { Title } = Typography;
 function Creation() {
     return (
         <div className="Creation">
-            <Title>Create Your Character</Title>
+            <h1>Create Your Character</h1>
             <p>Choose wisely!</p>
             <form action="Creation" method="post" id="CharacterCreation">
                 <input type="text" placeholder="Character Name"></input>
@@ -50,12 +51,22 @@ function Creation() {
                 </div>
             </form>
             <br /><br />
-            <a href="/">
-                <button> Save Character </button>
-            </a>
+            <a href="/"><button> Save Character </button></a>
         </div >
 
     );
+}
+function sendInfo() {
+    var characterName = document.getElementById("Character Name").value;
+    var race = document.getElementById("race").value;
+    var jsonPayload = '{"characterName: "' + characterName + '", race: "' + race + '"}';
+    var url = '/Create';
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", url, false);
+    xhr.setRequestHeader("Content-type", "application/json; charset=UTF-8");
+    xhr.send(jsonPayload);
+
 }
 
 export default Creation;

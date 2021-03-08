@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import 'antd/dist/antd.css';
 import { Typography } from 'antd';
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
@@ -14,10 +15,10 @@ function Home() {
         <div className="Home">
             <Title>Gen Five</Title>
             <p>Welcome to our battle simulator.</p>
-            <a href="/Creation.js">
+            <a href="/Creation">
                 <button> Create a Character </button></a>
             <br /><br />
-            <a href="/Battle.js">
+            <a href="/Battle">
                 <button> Start Battle </button></a>
         </div >
 
