@@ -1,0 +1,5 @@
+1) Navigate to the home page of the site
+2) Click on button that says "Start Battle"
+3) Confirm that the URL now ends with /Battle
+	If on your local, URL should be localhost:3000/Battle
+	If on Amplify, URL should be our Amplify URL, ending with /Battle

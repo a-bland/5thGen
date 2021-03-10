@@ -1,0 +1,5 @@
+1) Navigate to the Battle page
+2) Click button that says "End Battle"
+3) Confirm that URL now ends with /
+	if on local host: localhost:3000/
+	if on Amplify: our base amplify URL
