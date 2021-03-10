@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 import './App.css';
-import 'antd/dist/antd.css';
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import Battle from './components/Battle';
 import Creation from './components/Creation';

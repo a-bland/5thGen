@@ -1,13 +1,9 @@
 /* eslint-disable no-unused-vars */
 import '../App.css';
-import 'antd/dist/antd.css';
-import { Typography } from 'antd';
 
 import Amplify, { API, graphqlOperation } from 'aws-amplify';
 import aws_exports from '../aws-exports.js';
 Amplify.configure(aws_exports);
-
-const { Title } = Typography;
 
 function Creation() {
     return (
@@ -50,26 +46,105 @@ function Creation() {
                     </select>
                 </div>
                 <br />
-                <label for="intelligence">Intelligence </label>
-                <input type="number" min="0" max="20" id="intelligence" defaultValue="10"></input>
+                <fieldset class="stats">
+                    <label for="intelligence">Intelligence </label>
+                    <input type="number" min="0" max="20" id="intelligence" defaultValue="10"></input>
+                    <br /><br />
+                    <label for="dexterity">Dexterity </label>
+                    <input type="number" min="0" max="20" id="dexterity" defaultValue="10"></input>
+                    <br /><br />
+                    <label for="charisma">Charisma </label>
+                    <input type="number" min="0" max="20" id="charisma" defaultValue="10"></input>
+                    <br /><br />
+                    <label for="strength">Strength </label>
+                    <input type="number" min="0" max="20" id="strength" defaultValue="10"></input>
+                    <br /><br />
+                    <label for="constitution">Constitution </label>
+                    <input type="number" min="0" max="20" id="constitution" defaultValue="10"></input>
+                    <br /><br />
+                    <label for="wisdom">Wisdom </label>
+                    <input type="number" min="0" max="20" id="widsom" defaultValue="10"></input>
+                </fieldset>
                 <br /><br />
-                <label for="dexterity">Dexterity </label>
-                <input type="number" min="0" max="20" id="dexterity" defaultValue="10"></input>
+                <fieldset>
+                    <label for="athletics">Athletics </label>
+                    <input type="checkbox" id="athletics" class="proficiencies"></input>
+                    <br /><br />
+                    <label for="acrobatics">Acrobatics </label>
+                    <input type="checkbox" id="acrobatics" class="proficiencies"></input>
+                    <br /><br />
+                    <label for="sleightOfHand">Sleight of Hand </label>
+                    <input type="checkbox" id="sleightOfHand" class="proficiencies"></input>
+                    <br /><br />
+                    <label for="stealth">Stealth </label>
+                    <input type="checkbox" id="stealth" class="proficiencies"></input>
+                    <br /><br />
+                    <label for="arcana">Arcana </label>
+                    <input type="checkbox" id="arcana" class="proficiencies"></input>
+                    <br /><br />
+                    <label for="history">History </label>
+                    <input type="checkbox" id="history" class="proficiencies"></input>
+                    <br /><br />
+                    <label for="investigation">Investigation </label>
+                    <input type="checkbox" id="investigation" class="proficiencies"></input>
+                    <br /><br />
+                    <label for="nature">Nature </label>
+                    <input type="checkbox" id="nature" class="proficiencies"></input>
+                    <br /><br />
+                    <label for="religion">Religion</label>
+                    <input type="checkbox" id="religion" class="proficiencies"></input>
+                    <br /><br />
+                    <label for="animalHandling">Animal Handling </label>
+                    <input type="checkbox" id="animalHandling" class="proficiencies"></input>
+                    <br /><br />
+                    <label for="insight">Insight </label>
+                    <input type="checkbox" id="insight" class="proficiencies"></input>
+                    <br /><br />
+                    <label for="medicine">Medicine </label>
+                    <input type="checkbox" id="medicine" class="proficiencies"></input>
+                    <br /><br />
+                    <label for="perception">Perception </label>
+                    <input type="checkbox" id="perception" class="proficiencies"></input>
+                    <br /><br />
+                    <label for="survival">Survival </label>
+                    <input type="checkbox" id="survival" class="proficiencies"></input>
+                    <br /><br />
+                    <label for="deception">Deception </label>
+                    <input type="checkbox" id="deception" class="proficiencies"></input>
+                    <br /><br />
+                    <label for="intimidation">Intimidation </label>
+                    <input type="checkbox" id="intimidation" class="proficiencies"></input>
+                    <br /><br />
+                    <label for="performance">Performance </label>
+                    <input type="checkbox" id="performance" class="proficiencies"></input>
+                    <br /><br />
+                    <label for="persuasion">Persuasion </label>
+                    <input type="checkbox" id="persuasion" class="proficiencies"></input>
+                </fieldset>
+                <label for="profiencyBonus">Profiency Bonus </label>
+                <input type="number" id="profiencyBonus"></input>
                 <br /><br />
-                <label for="charisma">Charisma </label>
-                <input type="number" min="0" max="20" id="charisma" defaultValue="10"></input>
+                <label for="spellSave">Spell Save DC </label>
+                <input type="number" id="spellSave"></input>
                 <br /><br />
-                <label for="strength">Strength </label>
-                <input type="number" min="0" max="20" id="strength" defaultValue="10"></input>
+                <label for="hp">HP </label>
+                <input type="number" id="hp"></input>
                 <br /><br />
-                <label for="constitution">Constitution </label>
-                <input type="number" min="0" max="20" id="constitution" defaultValue="10"></input>
+                <label for="ac">Armor Class </label>
+                <input type="number" id="ac"></input>
                 <br /><br />
-                <label for="wisdom">Wisdom </label>
-                <input type="number" min="0" max="20" id="widsom" defaultValue="10"></input>
+                <label for="attackBonus">Attack Bonus </label>
+                <input type="number" id="attackBonus"></input>
+                <br /><br />
+                <label for="speed">Speed </label>
+                <input type="number" id="speed"></input>
+                <br /><br />
+                <label for="equipment">Equipment </label>
+                <input type="text" id="equipment"></input>
+                <br /><br />
             </form>
             <br /><br />
-            <a href="/"><button onclick="sendInfo()"> Save Character </button></a>
+            <a href="/"><button onClick={sendInfo}> Save Character </button></a>
         </div >
 
     );
@@ -84,6 +159,22 @@ function sendInfo() {
     var strength = document.getElementById("strength").value;
     var wisdom = document.getElementById("wisdom").value;
     var constitution = document.getElementById("constitution").value;
+
+    var proficiencyInputs = document.querySelectorAll('.proficiencies');
+    var proficiencies = {};
+    for (var i = 0; i < proficiencies.length; i++) {
+        if (proficiencyInputs[i].checked === true) {
+            proficiencies.push(proficiencyInputs[i]);
+        }
+    }
+
+    var hp = document.getElementById("hp").value;
+    var ac = document.getElementById("ac").value;
+    var speed = document.getElementById("speed").value;
+    var proficiencyBonus = document.getElementById("proficiencyBonus").value;
+    var attackBonus = document.getElementById("attackBonus").value;
+    var equipment = document.getElementById("equipment").value;
+    console.log(proficiencyInputs); //idk if the above works tbh
     var jsonPayload = '{"characterName: "' + characterName + '", race: "' + race + '", class: "' + characterClass + '", intelligence: "' + intelligence + '", dexterity: "' + dexterity + '", charisma: "' + charisma + '", strength: "' + strength + '", wisdom: "' + wisdom + '", constitution: "' + constitution + '"}';
     var url = '/Create';
 
