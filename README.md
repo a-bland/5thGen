@@ -31,7 +31,7 @@ While there are other products that individually offer the services our product 
 - [Velocity Chart](https://docs.google.com/spreadsheets/d/1zmuhoPPeO9SQrvBysmMswbhSMYx34nLcfIQ-MMtw9Ho/edit?usp=sharing)
 - [System Architecture](https://github.com/tazemaster/GenFive/blob/main/artifacts/architecture.md)
 - [Source Code](https://github.com/tazemaster/5thGen/tree/main/src)
-- - [Product Demonstration](https://youtu.be/xeGLVeUbJWA)
+- [Product Demonstration](https://youtu.be/xeGLVeUbJWA)
 
 ## Task Allocation
 
@@ -65,12 +65,29 @@ While there are other products that individually offer the services our product 
 - [Velocity Chart](https://docs.google.com/spreadsheets/d/1zmuhoPPeO9SQrvBysmMswbhSMYx34nLcfIQ-MMtw9Ho/edit?usp=sharing)
 - [System Architecture](https://github.com/tazemaster/GenFive/blob/main/artifacts/architecture.md)
 - [Source Code](https://github.com/tazemaster/5thGen/tree/main/src)
-- [Product Demonstration]
+- [Product Demonstration](https://youtu.be/2fJ4fWtejgs)
 
 ## Task Allocation
 
-- Gavin: 
-- Annabel: 
-- Liam: 
+- Gavin: Burndown/Velocity Charts and Class Diagram Associations
+- Annabel: Created new page and linked them together to start/end Battle mode
+- Liam: Configure automated testing for front end and post project demo
 - Stephanie: 
-- David: 
+- David: Focused on learning react and how to implement python into the code
+
+# Sprint 5
+
+- [Trello Board](https://trello.com/b/LyoSdg5y/genfive)
+- [Burndown Chart](https://docs.google.com/spreadsheets/d/1iiITnVncwxMSvG9pqxwT80iczs9ySy4z4PEPbXG65Ts/edit?usp=sharing)
+- [Velocity Chart](https://docs.google.com/spreadsheets/d/1zmuhoPPeO9SQrvBysmMswbhSMYx34nLcfIQ-MMtw9Ho/edit?usp=sharing)
+- [System Architecture](https://github.com/tazemaster/GenFive/blob/main/artifacts/architecture.md)
+- [Source Code](https://github.com/tazemaster/5thGen/tree/main/src)
+- [Product Demonstration](https://youtu.be/2fJ4fWtejgs)
+
+## Task Allocation
+
+- Gavin: attempting and failing at learning how to integrate python code into a website & Burndown/Velocity Charts
+- Annabel: trying to fix XML error, testing page navigation
+- Liam: Converting class diagrams to python to lay ground work for back end and database queuerying.
+- Stephanie: Sent monster and character stub. Learning GraphQL.
+- David: Dying in classes, small time available spent flailing with python

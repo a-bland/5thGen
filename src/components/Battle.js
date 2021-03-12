@@ -1,6 +1,3 @@
-/* eslint-disable no-unused-vars */
-import '../App.css';
-
 import Amplify, { API, graphqlOperation } from 'aws-amplify';
 import aws_exports from '../aws-exports.js'; // specify the location of aws-exports.js file on your project
 Amplify.configure(aws_exports);
