@@ -91,3 +91,21 @@ While there are other products that individually offer the services our product 
 - Liam: Converting class diagrams to python to lay ground work for back end and database queuerying.
 - Stephanie: Sent monster and character stub. Learning GraphQL.
 - David: Dying in classes, small time available spent flailing with python
+
+# Sprint 5
+
+- [Trello Board](https://trello.com/b/LyoSdg5y/genfive)
+- [Burndown Chart](https://docs.google.com/spreadsheets/d/1iiITnVncwxMSvG9pqxwT80iczs9ySy4z4PEPbXG65Ts/edit?usp=sharing)
+- [Velocity Chart](https://docs.google.com/spreadsheets/d/1zmuhoPPeO9SQrvBysmMswbhSMYx34nLcfIQ-MMtw9Ho/edit?usp=sharing)
+- [System Architecture](https://github.com/tazemaster/GenFive/blob/main/artifacts/architecture.md)
+- [Source Code](https://github.com/tazemaster/5thGen/tree/main/src)
+- [Tests]
+- [Product Demonstration](https://youtu.be/2fJ4fWtejgs)
+
+## Task Allocation
+
+- Gavin: 
+- Annabel: 
+- Liam: 
+- Stephanie: 
+- David: 
