@@ -1,0 +1,2 @@
+# This file lists dependencies for the python files within the project
+Flask==1.1.2
