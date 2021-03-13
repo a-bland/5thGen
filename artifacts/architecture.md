@@ -26,7 +26,7 @@ The user will also be able to enter the Battle Simulator. The battle simulator w
 
 # Code Design
 
-![Class Diagram](https://github.com/tazemaster/GenFive/blob/main/artifacts/diagram_images/Class%20Diagram.jpg)
+![Class Diagram](https://github.com/tazemaster/5thGen/blob/main/artifacts/diagram_images/GenFive%20Diagrams-Class.jpg)
 # Class Descriptions
 
 The User class will constantly be in use. Any user who shows up on the webapp with the intention of using it will be required to sign up/in and the associated user class will be referenced.
