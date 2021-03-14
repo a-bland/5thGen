@@ -4,49 +4,49 @@ import '../App.css';
 import Amplify, { API, graphqlOperation } from 'aws-amplify';
 import aws_exports from '../aws-exports.js';
 Amplify.configure(aws_exports);
-
+var baseURL = 'https://www.dnd5eapi.co/api/';
 function Creation() {
     return (
         <div className="Creation">
             <h1>Create Your Character</h1>
             <p>Choose wisely!</p>
             <form action="Creation" method="post" id="CharacterCreation">
-                <input type="text" placeholder="Character Name"></input>
+                <input type="text" placeholder="Character Name" id="characterName"></input>
                 <br /><br />
-                <div class="custom-select" id="race">
+                <div className="custom-select" id="race">
                     <select>
                         <option value="0">Select race:</option>
-                        <option value="1">Dwarf</option>
-                        <option value="2">Elf</option>
-                        <option value="3">Halfing</option>
-                        <option value="4">Human</option>
-                        <option value="5">Dragonborn</option>
-                        <option value="6">Gnome</option>
-                        <option value="7">Half-Elf</option>
-                        <option value="8">Half-Orc</option>
-                        <option value="9">Tiefling</option>
+                        <option value="dwarf">Dwarf</option>
+                        <option value="elf">Elf</option>
+                        <option value="halfling">Halfling</option>
+                        <option value="human">Human</option>
+                        <option value="dragonborn">Dragonborn</option>
+                        <option value="gnome">Gnome</option>
+                        <option value="half-elf">Half-Elf</option>
+                        <option value="half-orc">Half-Orc</option>
+                        <option value="tiefling">Tiefling</option>
                     </select>
                 </div>
                 <br />
-                <div class="custom-select" id="characterClass">
-                    <select>
+                <div className="custom-select">
+                    <select id='characterClass' onChange={displayClassInfo}>
                         <option value="0">Select class:</option>
-                        <option value="1">Barbarian</option>
-                        <option value="2">Bard</option>
-                        <option value="3">Cleric</option>
-                        <option value="4">Druid</option>
-                        <option value="5">Fighter</option>
-                        <option value="6">Monk</option>
-                        <option value="7">Paladin</option>
-                        <option value="8">Ranger</option>
-                        <option value="9">Rogue</option>
-                        <option value="10">Sorcerer</option>
-                        <option value="11">Warlock</option>
-                        <option value="12">Wizard</option>
+                        <option value="barbarian" >Barbarian</option>
+                        <option value="bard">Bard</option>
+                        <option value="cleric">Cleric</option>
+                        <option value="druid">Druid</option>
+                        <option value="fighter">Fighter</option>
+                        <option value="monk">Monk</option>
+                        <option value="paladin">Paladin</option>
+                        <option value="ranger">Ranger</option>
+                        <option value="rogue">Rogue</option>
+                        <option value="sorcerer">Sorcerer</option>
+                        <option value="warlock">Warlock</option>
+                        <option value="wizard">Wizard</option>
                     </select>
                 </div>
                 <br />
-                <fieldset class="stats">
+                <fieldset className="stats">
                     <label for="intelligence">Intelligence </label>
                     <input type="number" min="0" max="20" id="intelligence" defaultValue="10"></input>
                     <br /><br />
@@ -68,58 +68,58 @@ function Creation() {
                 <br /><br />
                 <fieldset>
                     <label for="athletics">Athletics </label>
-                    <input type="checkbox" id="athletics" class="proficiencies"></input>
+                    <input type="checkbox" id="athletics" className="proficiencies"></input>
                     <br /><br />
                     <label for="acrobatics">Acrobatics </label>
-                    <input type="checkbox" id="acrobatics" class="proficiencies"></input>
+                    <input type="checkbox" id="acrobatics" className="proficiencies"></input>
                     <br /><br />
                     <label for="sleightOfHand">Sleight of Hand </label>
-                    <input type="checkbox" id="sleightOfHand" class="proficiencies"></input>
+                    <input type="checkbox" id="sleightOfHand" className="proficiencies"></input>
                     <br /><br />
                     <label for="stealth">Stealth </label>
-                    <input type="checkbox" id="stealth" class="proficiencies"></input>
+                    <input type="checkbox" id="stealth" className="proficiencies"></input>
                     <br /><br />
                     <label for="arcana">Arcana </label>
-                    <input type="checkbox" id="arcana" class="proficiencies"></input>
+                    <input type="checkbox" id="arcana" className="proficiencies"></input>
                     <br /><br />
                     <label for="history">History </label>
-                    <input type="checkbox" id="history" class="proficiencies"></input>
+                    <input type="checkbox" id="history" className="proficiencies"></input>
                     <br /><br />
                     <label for="investigation">Investigation </label>
-                    <input type="checkbox" id="investigation" class="proficiencies"></input>
+                    <input type="checkbox" id="investigation" className="proficiencies"></input>
                     <br /><br />
                     <label for="nature">Nature </label>
-                    <input type="checkbox" id="nature" class="proficiencies"></input>
+                    <input type="checkbox" id="nature" className="proficiencies"></input>
                     <br /><br />
                     <label for="religion">Religion</label>
-                    <input type="checkbox" id="religion" class="proficiencies"></input>
+                    <input type="checkbox" id="religion" className="proficiencies"></input>
                     <br /><br />
                     <label for="animalHandling">Animal Handling </label>
-                    <input type="checkbox" id="animalHandling" class="proficiencies"></input>
+                    <input type="checkbox" id="animalHandling" className="proficiencies"></input>
                     <br /><br />
                     <label for="insight">Insight </label>
-                    <input type="checkbox" id="insight" class="proficiencies"></input>
+                    <input type="checkbox" id="insight" className="proficiencies"></input>
                     <br /><br />
                     <label for="medicine">Medicine </label>
-                    <input type="checkbox" id="medicine" class="proficiencies"></input>
+                    <input type="checkbox" id="medicine" className="proficiencies"></input>
                     <br /><br />
                     <label for="perception">Perception </label>
-                    <input type="checkbox" id="perception" class="proficiencies"></input>
+                    <input type="checkbox" id="perception" className="proficiencies"></input>
                     <br /><br />
                     <label for="survival">Survival </label>
-                    <input type="checkbox" id="survival" class="proficiencies"></input>
+                    <input type="checkbox" id="survival" className="proficiencies"></input>
                     <br /><br />
                     <label for="deception">Deception </label>
-                    <input type="checkbox" id="deception" class="proficiencies"></input>
+                    <input type="checkbox" id="deception" className="proficiencies"></input>
                     <br /><br />
                     <label for="intimidation">Intimidation </label>
-                    <input type="checkbox" id="intimidation" class="proficiencies"></input>
+                    <input type="checkbox" id="intimidation" className="proficiencies"></input>
                     <br /><br />
                     <label for="performance">Performance </label>
-                    <input type="checkbox" id="performance" class="proficiencies"></input>
+                    <input type="checkbox" id="performance" className="proficiencies"></input>
                     <br /><br />
                     <label for="persuasion">Persuasion </label>
-                    <input type="checkbox" id="persuasion" class="proficiencies"></input>
+                    <input type="checkbox" id="persuasion" className="proficiencies"></input>
                 </fieldset>
                 <label for="profiencyBonus">Profiency Bonus </label>
                 <input type="number" id="profiencyBonus"></input>
@@ -150,9 +150,9 @@ function Creation() {
     );
 }
 function sendInfo() {
-    var characterName = document.getElementById("Character Name").value;
+    var characterName = document.getElementById("characterName").value;
     var race = document.getElementById("race").value;
-    var characterClass = document.getElementById("class").value;
+    var characterClass = document.getElementById("characterClass").value;
     var intelligence = document.getElementById("intelligence").value;
     var dexterity = document.getElementById("dexterity").value;
     var charisma = document.getElementById("charisma").value;
@@ -174,13 +174,42 @@ function sendInfo() {
     var proficiencyBonus = document.getElementById("proficiencyBonus").value;
     var attackBonus = document.getElementById("attackBonus").value;
     var equipment = document.getElementById("equipment").value;
+    var spellSave = document.getElementById("spellSave").value;
+
     console.log(proficiencyInputs); //idk if the above works tbh
-    var jsonPayload = '{"characterName: "' + characterName + '", race: "' + race + '", class: "' + characterClass + '", intelligence: "' + intelligence + '", dexterity: "' + dexterity + '", charisma: "' + charisma + '", strength: "' + strength + '", wisdom: "' + wisdom + '", constitution: "' + constitution + '"}';
-    var url = '/Create';
+    var jsonPayload = '{"characterName: "' + characterName + '", race: "' + race + '", class: "' + characterClass + '", intelligence: "' + intelligence + '", dexterity: "' + dexterity + '", charisma: "' + charisma + '", strength: "' + strength + '", wisdom: "' + wisdom + '", constitution: "' + constitution + '", proficiencies: "' + proficiencies + '", HP: "' + hp + '", AC: "' + ac + '", speed: "' + speed + '", spellSave: "' + spellSave + '", attackBonus: "' + attackBonus + '", equipment: "' + equipment + '"}"';
+    var url = 'localhost:3000/Create';
 
     var xhr = new XMLHttpRequest();
     xhr.open("POST", url, false);
     xhr.setRequestHeader("Content-type", "application/json; charset=UTF-8");
     xhr.send(jsonPayload);
+}
+
+function displayClassInfo() {
+    //document.getElementById('characterClass').options[0].selected = true;
+    var selectedClass = document.getElementById('characterClass').value;
+    var subURL = 'classes/';
+    var completeURL = baseURL + subURL + selectedClass;
+    fetch(completeURL)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (myJson) {
+            console.log(myJson);
+        })
+        .catch(function (error) {
+            console.log("Error: " + error);
+        });
+    /*
+    fetch(completeURL)
+        .then(response => response.json()),
+        .then(data => console.log(data);
+    //alert("The class " + selectedClass + " was selected");
+    /*
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", completeURL, false)
+    xhr.setRequestHeader("Content-type", "application/json; charset=UTF-8");
+    */
 }
 export default Creation;
