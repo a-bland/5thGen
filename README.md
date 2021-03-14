@@ -105,7 +105,7 @@ While there are other products that individually offer the services our product 
 ## Task Allocation
 
 - Gavin: 
-- Annabel: 
+- Annabel: Added input fields for character creation process, messed around with get requests to learn how they work
 - Liam: 
 - Stephanie: Learning GraphQL for Python and D&D API. Noticed updated class diagram was not in GitHub so I put it in there.
 - David: 
