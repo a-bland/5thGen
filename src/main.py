@@ -1,2 +1,11 @@
+import boto3
+
 def main():
-    # The idea is that this file uses the library.py classes and does all instatiation from here, possibly with some helper methods
+    # Gets the service resource
+    dynamodb = boto3.resource('dynamodb')
+
+    # Instantiates table resource for existing table
+    table = dynamo.Table('users')
+
+    # Testing printing from table
+    print = dynamo(table.creation_date_time)
