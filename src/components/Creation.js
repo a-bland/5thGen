@@ -176,7 +176,6 @@ function sendInfo() {
     var equipment = document.getElementById("equipment").value;
     var spellSave = document.getElementById("spellSave").value;
 
-    console.log(proficiencyInputs); //idk if the above works tbh
     var jsonPayload = '{"characterName: "' + characterName + '", race: "' + race + '", class: "' + characterClass + '", intelligence: "' + intelligence + '", dexterity: "' + dexterity + '", charisma: "' + charisma + '", strength: "' + strength + '", wisdom: "' + wisdom + '", constitution: "' + constitution + '", proficiencies: "' + proficiencies + '", HP: "' + hp + '", AC: "' + ac + '", speed: "' + speed + '", spellSave: "' + spellSave + '", attackBonus: "' + attackBonus + '", equipment: "' + equipment + '"}"';
     var url = 'localhost:3000/Create';
 
