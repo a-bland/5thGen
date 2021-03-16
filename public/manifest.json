@@ -1,6 +1,6 @@
 {
-  "short_name": "Gen Five",
-  "name": "Play 5th Generation Dungeons and dragons",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
