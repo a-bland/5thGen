@@ -11,9 +11,14 @@ function Home() {
         <div className="Home">
             <h1>Gen Five</h1>
             <p>Welcome to our battle simulator.</p>
+            <h2>Your Characters</h2>
             <a href="/Creation">
-                <button> Create a Character </button></a>
+                <button> Create a New Character </button></a>
             <br /><br />
+            <h2>Your Parties</h2>
+            <a href="/">
+                <button> Create a Party </button></a>
+            <br /><br /><br />
             <a href="/Battle">
                 <button> Start Battle </button></a>
         </div >

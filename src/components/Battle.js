@@ -1,12 +1,32 @@
+/* eslint-disable no-unused-vars */
 import Amplify, { API, graphqlOperation } from 'aws-amplify';
-import aws_exports from '../aws-exports.js'; // specify the location of aws-exports.js file on your project
+import aws_exports from '../aws-exports.js';
 Amplify.configure(aws_exports);
 
 function Battle() {
     return (
         <div className="Battle">
             <h1>Battle Simulator</h1>
-            <p>Hello CHARACTER NAME!</p>
+            <p>CHARACTER NAME (Race Class)</p>
+            <h3>HP: XX</h3>
+            <h3>AC: XX</h3>
+            <h3>Speed: XX</h3>
+            <h4>Turn Order</h4>
+            <label for="inventory">Inventory</label>
+            <br />
+            <input type="text" id="inventory"></input>
+            <br /><br />
+            <label for="spellList">Spells</label>
+            <br />
+            <input type="text" id="spellList"></input>
+            <br /><br />
+            <label for="spellSlots">Spell Slots</label>
+            <br />
+            <input type="text" id="spellSlots"></input>
+            <br /><br />
+            <label for="statusEffects">Status Effects</label>
+            <br />
+            <input type="text" id="statusEffects"></input>
             <form>
                 <input type="radio" id="standard" defaultChecked="true" name="rollType"></input>
                 <label for="standard" > Standard </label>
@@ -24,7 +44,7 @@ function Battle() {
             <input type="number" id="diceType" defaultValue="6" min="2" step="2" max="100"></input>
             <br />
             <button onClick={roll}>Roll</button>
-
+            <br /><br />
             <br /><br />
             <a href="/">
                 <button> End Battle </button>
