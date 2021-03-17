@@ -11,7 +11,7 @@ function Battle() {
             <h3>HP: XX</h3>
             <h3>AC: XX</h3>
             <h3>Speed: XX</h3>
-            <h4>Turn Order</h4>
+            <h4>Turn Order:</h4>
             <label for="inventory">Inventory</label>
             <br />
             <input type="text" id="inventory"></input>
