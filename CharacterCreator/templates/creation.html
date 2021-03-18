@@ -22,7 +22,7 @@
                 </div>
                 <br />
                 <div className="custom-select">
-                    <select id='characterClass' onChange={displayClassInfo}>
+                    <select id='characterClass' onChange="displayClassInfo()">
                         <option value="0">Select class:</option>
                         <option value="barbarian" >Barbarian</option>
                         <option value="bard">Bard</option>
@@ -137,5 +137,5 @@
                 <br /><br />
             </form>
             <br /><br />
-            <a href="/"><button onClick={sendInfo}> Save Character </button></a>
+            <a href="/"><button onClick="sendInfo()"> Save Character </button></a>
 </div >
