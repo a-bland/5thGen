@@ -27,13 +27,46 @@ function sendInfo() {
     var equipment = document.getElementById("equipment").value;
     var spellSave = document.getElementById("spellSave").value;
 
-    var jsonPayload = '{"characterName: "' + characterName + '", race: "' + race + '", class: "' + characterClass + '", intelligence: "' + intelligence + '", dexterity: "' + dexterity + '", charisma: "' + charisma + '", strength: "' + strength + '", wisdom: "' + wisdom + '", constitution: "' + constitution + '", proficiencies: "' + proficiencies + '", HP: "' + hp + '", AC: "' + ac + '", speed: "' + speed + '", spellSave: "' + spellSave + '", attackBonus: "' + attackBonus + '", equipment: "' + equipment + '"}"';
-    var url = 'localhost:3000/Create';
+    var character = {
+        "name":characterName,
+        "race":race,
+        "class":characterClass,
+        "intelligence":intelligence,
+        "dexterity":dexterity,
+        "charisma":charisma,
+        "strength":strength,
+        "wisdom":wisdom,
+        "constitution":constitution,
+        //"proficiencies":proficiencies,
+        "healthPoints":hp,
+        "armorClass":ac,
+        "speed":speed,
+        "proficiencyBonus":proficiencyBonus,
+        "attackBonus":attackBonus,
+        "equipment":equipment,
+        "spellSaveDC":spellSave
+    }
 
+    var characterAsJSON = JSON.stringify(character);
+
+    $ajax({
+        type: "POST",
+        url: '{{ 'my-ajax-test/' }}',
+        data: { scrfmiddlwaretoken: '{{ csrf_token }}', text: characterAsJSON },
+        success: function callback(response) {
+            console.log(response);
+        }
+    });
+
+/*
+    console.log(characterAsJSON);
+    var jsonPayload = '{"characterName: "' + characterName + '", race: "' + race + '", class: "' + characterClass + '", intelligence: "' + intelligence + '", dexterity: "' + dexterity + '", charisma: "' + charisma + '", strength: "' + strength + '", wisdom: "' + wisdom + '", constitution: "' + constitution + '", proficiencies: "' + proficiencies + '", HP: "' + hp + '", AC: "' + ac + '", speed: "' + speed + '", spellSave: "' + spellSave + '", attackBonus: "' + attackBonus + '", equipment: "' + equipment + '"}"';
+    var url = 'localhost:8000/create';
     var xhr = new XMLHttpRequest();
     xhr.open("POST", url, false);
     xhr.setRequestHeader("Content-type", "application/json; charset=UTF-8");
     xhr.send(jsonPayload);
+*/
 }
 
 function displayClassInfo() {
@@ -56,7 +89,7 @@ function displayClassInfo() {
         .then(response => response.json()),
         .then(data => console.log(data);
     //alert("The class " + selectedClass + " was selected");
-    /*
+    
     var xhr = new XMLHttpRequest();
     xhr.open("GET", completeURL, false)
     xhr.setRequestHeader("Content-type", "application/json; charset=UTF-8");

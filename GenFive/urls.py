@@ -8,4 +8,5 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('creation', views.creation),
     path('battle', views.battle),
+    path('my-ajax-test/', views.testcall),
 ]
