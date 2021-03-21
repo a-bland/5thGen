@@ -61,7 +61,7 @@ function sendInfo() {
 
     console.log(characterAsJSON);
 */
-    var jsonPayload = '{"characterName: "' + characterName + '", race: "' + race + '", characterClass: "' + characterClass + '", intelligence: "' + intelligence + '", dexterity: "' + dexterity + '", charisma: "' + charisma + '", strength: "' + strength + '", wisdom: "' + wisdom + '", constitution: "' + constitution + '", proficiencies: "' + proficiencies + '", healthPoints: "' + hp + '", armorClass: "' + ac + '", speed: "' + speed + '", spellSaveDC: "' + spellSave + '", attackBonus: "' + attackBonus + '", equipment: "' + equipment + '"}"';
+    var jsonPayload = '{"name: "' + characterName + '", race: "' + race + '", characterClass: "' + characterClass + '", intelligence: "' + intelligence + '", dexterity: "' + dexterity + '", charisma: "' + charisma + '", strength: "' + strength + '", wisdom: "' + wisdom + '", constitution: "' + constitution + '", proficiencies: "' + proficiencies + '", healthPoints: "' + hp + '", armorClass: "' + ac + '", speed: "' + speed + '", spellSaveDC: "' + spellSave + '", attackBonus: "' + attackBonus + '", equipment: "' + equipment + '"}"';
     var url = './insertDB.py';
     var xhr = new XMLHttpRequest();
     xhr.open("POST", url, false);
