@@ -27,6 +27,7 @@ function sendInfo() {
     var equipment = document.getElementById("equipment").value;
     var spellSave = document.getElementById("spellSave").value;
 
+/*
     var character = {
         "name":characterName,
         "race":race,
@@ -58,15 +59,15 @@ function sendInfo() {
         }
     });
 
-/*
     console.log(characterAsJSON);
-    var jsonPayload = '{"characterName: "' + characterName + '", race: "' + race + '", class: "' + characterClass + '", intelligence: "' + intelligence + '", dexterity: "' + dexterity + '", charisma: "' + charisma + '", strength: "' + strength + '", wisdom: "' + wisdom + '", constitution: "' + constitution + '", proficiencies: "' + proficiencies + '", HP: "' + hp + '", AC: "' + ac + '", speed: "' + speed + '", spellSave: "' + spellSave + '", attackBonus: "' + attackBonus + '", equipment: "' + equipment + '"}"';
-    var url = 'localhost:8000/create';
+*/
+    var jsonPayload = '{"characterName: "' + characterName + '", race: "' + race + '", characterClass: "' + characterClass + '", intelligence: "' + intelligence + '", dexterity: "' + dexterity + '", charisma: "' + charisma + '", strength: "' + strength + '", wisdom: "' + wisdom + '", constitution: "' + constitution + '", proficiencies: "' + proficiencies + '", healthPoints: "' + hp + '", armorClass: "' + ac + '", speed: "' + speed + '", spellSaveDC: "' + spellSave + '", attackBonus: "' + attackBonus + '", equipment: "' + equipment + '"}"';
+    var url = './insertDB.py';
     var xhr = new XMLHttpRequest();
     xhr.open("POST", url, false);
     xhr.setRequestHeader("Content-type", "application/json; charset=UTF-8");
     xhr.send(jsonPayload);
-*/
+
 }
 
 function displayClassInfo() {
