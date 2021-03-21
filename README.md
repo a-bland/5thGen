@@ -125,5 +125,5 @@ While there are other products that individually offer the services our product 
 - Gavin: Migrated project from Amplify to Lightsail + Django (w/ help from Annabel). Setup code to insert Characters into database from .json file, but wasn't able to send data from creation.js to insertDB.py to get the character creator working. 
 - Annabel: 
 - Liam: 
-- Stephanie: 
+- Stephanie: Learning GraphQL for Django.
 - David: 
