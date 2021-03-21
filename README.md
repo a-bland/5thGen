@@ -109,3 +109,21 @@ While there are other products that individually offer the services our product 
 - Liam: Added boiler plate code and continued efforts with Dynamodb table creation
 - Stephanie: Learning GraphQL for Python and D&D API. Noticed updated class diagram was not in GitHub so I put it in there.
 - David: Joined Gavin in learning Django, got a local app running, in the process of learning how to integrate react with Django
+
+# Sprint 7
+
+- [Trello Board](https://trello.com/b/LyoSdg5y/genfive)
+- [Burndown Chart]()
+- [Velocity Chart](https://docs.google.com/spreadsheets/d/1zmuhoPPeO9SQrvBysmMswbhSMYx34nLcfIQ-MMtw9Ho/edit?usp=sharing)
+- [System Architecture](https://github.com/tazemaster/GenFive/blob/main/artifacts/architecture.md)
+- [Source Code](https://github.com/tazemaster/5thGen/tree/main/src)
+- [Tests](https://github.com/tazemaster/5thGen/tree/main/test)
+- [Product Demonstration]()
+
+## Task Allocation
+
+- Gavin: Migrated project from Amplify to Lightsail + Django (w/ help from Annabel). Setup code to insert Characters into database from .json file, but wasn't able to send data from creation.js to insertDB.py to get the character creator working. 
+- Annabel: 
+- Liam: 
+- Stephanie: 
+- David: 
