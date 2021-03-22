@@ -116,8 +116,9 @@ While there are other products that individually offer the services our product 
 - [Burndown Chart](https://docs.google.com/spreadsheets/d/1ydDIiCTdacYRQR8fYd0A7m_4bHwZ8VrwFOkmBXNZUwo/edit?usp=sharing)
 - [Velocity Chart](https://docs.google.com/spreadsheets/d/1zmuhoPPeO9SQrvBysmMswbhSMYx34nLcfIQ-MMtw9Ho/edit?usp=sharing)
 - [System Architecture](https://github.com/tazemaster/GenFive/blob/main/artifacts/architecture.md)
-- [Source Code](https://github.com/tazemaster/5thGen/tree/main/src)
-- [Tests](https://github.com/tazemaster/5thGen/tree/main/test)
+- [HTML Code](https://github.com/tazemaster/5thGen/tree/main/CharacterCreator/templates)
+- [JavaScript/Python Code](https://github.com/tazemaster/5thGen/tree/main/static)
+- [Tests](https://github.com/tazemaster/5thGen/blob/main/CharacterCreator/tests.py)
 - [Product Demonstration]()
 
 ## Task Allocation
