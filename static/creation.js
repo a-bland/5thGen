@@ -28,7 +28,7 @@ function sendInfo() {
     var spellSave = document.getElementById("spellSave").value;
 
     var jsonPayload = '{"characterName: "' + characterName + '", race: "' + race + '", class: "' + characterClass + '", intelligence: "' + intelligence + '", dexterity: "' + dexterity + '", charisma: "' + charisma + '", strength: "' + strength + '", wisdom: "' + wisdom + '", constitution: "' + constitution + '", proficiencies: "' + proficiencies + '", HP: "' + hp + '", AC: "' + ac + '", speed: "' + speed + '", spellSave: "' + spellSave + '", attackBonus: "' + attackBonus + '", equipment: "' + equipment + '"}"';
-    var url = 'localhost:3000/Create';
+    var url = '/characters';
 
     var xhr = new XMLHttpRequest();
     xhr.open("POST", url, false);
