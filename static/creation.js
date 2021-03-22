@@ -29,7 +29,17 @@ function sendInfo() {
 
     var jsonPayload = '{"characterName: "' + characterName + '", race: "' + race + '", class: "' + characterClass + '", intelligence: "' + intelligence + '", dexterity: "' + dexterity + '", charisma: "' + charisma + '", strength: "' + strength + '", wisdom: "' + wisdom + '", constitution: "' + constitution + '", proficiencies: "' + proficiencies + '", HP: "' + hp + '", AC: "' + ac + '", speed: "' + speed + '", spellSave: "' + spellSave + '", attackBonus: "' + attackBonus + '", equipment: "' + equipment + '"}"';
     var url = '/characters';
+    /*
+    html_response = requests.get('/characters',
+        headers = { 'accept': 'text/html' },
+        cookies = cookies)
 
+    cookies['csrftoken'] = html_response.cookies['csrftoken']
+
+    response = requests.put('/characters',
+        data = jsonPayload, headers = headers,
+        cookies = cookies)
+*/
     var xhr = new XMLHttpRequest();
     xhr.open("POST", url, false);
     xhr.setRequestHeader("Content-type", "application/json; charset=UTF-8");

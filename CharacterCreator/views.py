@@ -5,6 +5,7 @@ from django.shortcuts import render
 from django.http import Http404
 from django.contrib.auth.models import User, Group
 from CharacterCreator.models import Character, User
+from django.views.decorators.csrf import csrf_exempt
 
 
 def home(request):
@@ -20,7 +21,6 @@ def battle(request):
 
 
 # from django.contrib.auth.models import User, Group
-
 
 class UserViewSet(viewsets.ModelViewSet):
     # API endpoint that allows users to be viewed or edited.
