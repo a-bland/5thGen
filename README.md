@@ -126,4 +126,4 @@ While there are other products that individually offer the services our product 
 - Annabel: 
 - Liam: 
 - Stephanie: Learning GraphQL for Django.
-- David: 
+- David: Learning more Django throughout the week, helped with the switch to the current Django app
