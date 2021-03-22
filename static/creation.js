@@ -28,7 +28,7 @@ function sendInfo() {
     var spellSave = document.getElementById("spellSave").value;
 
     var jsonPayload = '{"characterName: "' + characterName + '", race: "' + race + '", class: "' + characterClass + '", intelligence: "' + intelligence + '", dexterity: "' + dexterity + '", charisma: "' + charisma + '", strength: "' + strength + '", wisdom: "' + wisdom + '", constitution: "' + constitution + '", proficiencies: "' + proficiencies + '", HP: "' + hp + '", AC: "' + ac + '", speed: "' + speed + '", spellSave: "' + spellSave + '", attackBonus: "' + attackBonus + '", equipment: "' + equipment + '"}"';
-    var url = '/characters';
+    var url = 'http://127.0.0.1:8000/characters/';
     /*
     html_response = requests.get('/characters',
         headers = { 'accept': 'text/html' },
