@@ -3,7 +3,8 @@
 <div className="Creation">
     <h1>Create Your Character</h1>
     <p>Choose wisely!</p>
-    <form action="Creation" id="CharacterCreation" method="post" {% csrf_token %}>
+    <!--
+    <form action="/characters/" id="CharacterCreation" method="POST" {% csrf_token %}>
         <input type="text" placeholder="Character Name" id="characterName"></input>
         <br /><br />
         <div className="custom-select" id="race">
@@ -137,5 +138,155 @@
         <br /><br />
     </form>
     <br /><br />
-    <a href="/"><button onClick={sendInfo}> Save Character </button></a>
+    <a href="/home"><button onClick={sendInfo}> Save Character </button></a>
 </div>
+-->
+
+    <div class="tab-pane active" id="post-object-form">
+        <form action="/characters/" method="POST" enctype="multipart/form-data" class="form-horizontal" novalidate="">
+            <fieldset>
+                <input type="hidden" name="csrfmiddlewaretoken"
+                    value="xhqDJfxeQKNKFXAGTHGxsdKsqvXx11WGDgOYpv6wZh4zAQhpl62FeAxykV5wUfMX">
+                <div class="form-group ">
+                    <label class="col-sm-2 control-label ">
+                        Name
+                    </label>
+                    <div class="col-sm-10">
+                        <input name="name" class="form-control" type="text" value="">
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label class="col-sm-2 control-label ">
+                        Race
+                    </label>
+                    <div class="col-sm-10">
+                        <input name="race" class="form-control" type="text" value="">
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label class="col-sm-2 control-label ">
+                        CharacterClass
+                    </label>
+                    <div class="col-sm-10">
+                        <input name="characterClass" class="form-control" type="text" value="">
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label class="col-sm-2 control-label ">
+                        Wisdom
+                    </label>
+                    <div class="col-sm-10">
+                        <input name="wisdom" class="form-control" type="number" value="">
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label class="col-sm-2 control-label ">
+                        Charisma
+                    </label>
+                    <div class="col-sm-10">
+                        <input name="charisma" class="form-control" type="number" value="">
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label class="col-sm-2 control-label ">
+                        Strength
+                    </label>
+                    <div class="col-sm-10">
+                        <input name="strength" class="form-control" type="number" value="">
+                    </div>
+                </div>
+                <div class="form-group ">
+
+                    <label class="col-sm-2 control-label ">
+                        Dexterity
+                    </label>
+                    <div class="col-sm-10">
+                        <input name="dexterity" class="form-control" type="number" value="">
+                    </div>
+                </div>
+                <div class="form-group ">
+
+                    <label class="col-sm-2 control-label ">
+                        Constitution
+                    </label>
+                    <div class="col-sm-10">
+                        <input name="constitution" class="form-control" type="number" value="">
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label class="col-sm-2 control-label ">
+                        Intelligence
+                    </label>
+                    <div class="col-sm-10">
+                        <input name="intelligence" class="form-control" type="number" value="">
+                    </div>
+                </div>
+                <div class="form-group ">
+
+                    <label class="col-sm-2 control-label ">
+                        Hp
+                    </label>
+                    <div class="col-sm-10">
+                        <input name="hp" class="form-control" type="number" value="">
+                    </div>
+                </div>
+                <div class="form-group ">
+
+                    <label class="col-sm-2 control-label ">
+                        Ac
+                    </label>
+                    <div class="col-sm-10">
+                        <input name="ac" class="form-control" type="number" value="">
+                    </div>
+                </div>
+                <div class="form-group ">
+
+                    <label class="col-sm-2 control-label ">
+                        AttackBonus
+                    </label>
+                    <div class="col-sm-10">
+                        <input name="attackBonus" class="form-control" type="number" value="">
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label class="col-sm-2 control-label ">
+                        Speed
+                    </label>
+                    <div class="col-sm-10">
+                        <input name="speed" class="form-control" type="number" value="">
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label class="col-sm-2 control-label ">
+                        SpellSaveDC
+                    </label>
+                    <div class="col-sm-10">
+                        <input name="spellSaveDC" class="form-control" type="number" value="">
+                    </div>
+                </div>
+                <div class="form-group ">
+
+                    <label class="col-sm-2 control-label ">
+                        Equipment
+                    </label>
+                    <div class="col-sm-10">
+                        <input name="equipment" class="form-control" type="text" value="">
+                    </div>
+                </div>
+                <div class="form-group ">
+
+                    <label class="col-sm-2 control-label ">
+                        Proficiencies
+                    </label>
+                    <div class="col-sm-10">
+                        <input name="proficiencies" class="form-control" type="text" value="">
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button class="btn btn-primary js-tooltip" title=""
+                        data-original-title="Make a POST request on the Character List resource">POST</button>
+                </div>
+            </fieldset>
+        </form>
+
+    </div>

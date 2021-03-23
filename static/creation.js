@@ -40,10 +40,15 @@ function sendInfo() {
         data = jsonPayload, headers = headers,
         cookies = cookies)
 */
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", url, false);
-    xhr.setRequestHeader("Content-type", "application/json; charset=UTF-8");
-    xhr.send(jsonPayload);
+    /*
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", url, false);
+        xhr.setRequestHeader("Content-type", "application/vnd.api+json; charset=UTF-8");
+        xhr.send(jsonPayload);
+        */
+    fetch('http://127.0.0.1:8000/characters/', { method: 'POST', body: {} })
+        .then(response => response.json())
+        .then(jsonPayload => console.log(jsonPayload));
 }
 
 function displayClassInfo() {
