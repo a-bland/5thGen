@@ -160,24 +160,35 @@
                         Race
                     </label>
                     <div class="col-sm-10">
-                        <!--<input name="race" class="form-control" type="text" value="">-->
-                        <input name="race" class="form-control" type="radio" value="dwarf" checked="true">
-                        <input class="form-control" type="radio" value="elf">
-                        <input class="form-control" type="radio" value="half-elf">
-                        <input class="form-control" type="radio" value="half-orc">
-                        <input class="form-control" type="radio" value="halfling">
-                        <input class="form-control" type="radio" value="human">
-                        <input class="form-control" type="radio" value="dragonborn">
-                        <input class="form-control" type="radio" value="gnome">
-                        <input class="form-control" type="radio" value="tiefling">-->
+                        Dwarf <input name="race" class="form-control" type="radio" value="dwarf"><br />
+                        Elf <input name="race" class="form-control" type="radio" value="elf"><br />
+                        Half-elf <input name="race" class="form-control" type="radio" value="half-elf"><br />
+                        Half-orc <input name="race" class="form-control" type="radio" value="half-orc"><br />
+                        Halfling <input name="race" class="form-control" type="radio" value="halfling"><br />
+                        Human <input name="race" class="form-control" type="radio" value="human"><br />
+                        Dragonborn <input name="race" class="form-control" type="radio" value="dragonborn"><br />
+                        Gnome <input name="race" class="form-control" type="radio" value="gnome"><br />
+                        Tiefling <input name="race" class="form-control" type="radio" value="tiefling"><br />
                     </div>
                 </div>
+                <br />
                 <div class="form-group ">
                     <label class="col-sm-2 control-label ">
                         Class
                     </label>
                     <div class="col-sm-10">
-                        <input name="characterClass" class="form-control" type="text" value="">
+                        Barbarian<input name="characterClass" class="form-control" type="radio" value="barbarian"><br />
+                        Bard <input name=" characterClass" class="form-control" type="radio" value="bard"><br />
+                        Cleric <input name=" characterClass" class="form-control" type="radio" value="cleric"><br />
+                        Druid <input name=" characterClass" class="form-control" type="radio" value="druid"><br />
+                        Fighter <input name=" characterClass" class="form-control" type="radio" value="fighter"><br />
+                        Monk <input name=" characterClass" class="form-control" type="radio" value="monk"><br />
+                        Paladin <input name=" characterClass" class="form-control" type="radio" value="paladin"><br />
+                        Ranger <input name=" characterClass" class="form-control" type="radio" value="ranger"><br />
+                        Rogue <input name=" characterClass" class="form-control" type="radio" value="rogue"><br />
+                        Sorcerer <input name=" characterClass" class="form-control" type="radio" value="sorcerer"><br />
+                        Warlock <input name=" characterClass" class="form-control" type="radio" value="warlock"><br />
+                        Wizard <input name=" characterClass" class="form-control" type="radio" value="wizard"><br />
                     </div>
                 </div>
                 <br /><br />
@@ -287,15 +298,70 @@
                         Proficiencies
                     </label>
                     <div class="col-sm-10">
-                        <input name="proficiencies" class="form-control" type="text" value="">
+                        <!--<input name="proficiencies" class="form-control" type="text" value="">-->
+                        <label for="athletics">Athletics </label>
+                        <input type="checkbox" value="athletics" name="proficiencies"></input>
+                        <br /><br />
+                        <label for="acrobatics">Acrobatics </label>
+                        <input type="checkbox" value="acrobatics" name="proficiencies"></input>
+                        <br /><br />
+                        <label for="sleightOfHand">Sleight of Hand </label>
+                        <input type="checkbox" value="sleightOfHand" name="proficiencies"></input>
+                        <br /><br />
+                        <label for="stealth">Stealth </label>
+                        <input type="checkbox" value="stealth" name="proficiencies"></input>
+                        <br /><br />
+                        <label for="arcana">Arcana </label>
+                        <input type="checkbox" value="arcana" name="proficiencies"></input>
+                        <br /><br />
+                        <label for="history">History </label>
+                        <input type="checkbox" value="history" name="proficiencies"></input>
+                        <br /><br />
+                        <label for="investigation">Investigation </label>
+                        <input type="checkbox" value="investigation" name="proficiencies"></input>
+                        <br /><br />
+                        <label for="nature">Nature </label>
+                        <input type="checkbox" value="nature" name="proficiencies"></input>
+                        <br /><br />
+                        <label for="religion">Religion</label>
+                        <input type="checkbox" value="religion" name="proficiencies"></input>
+                        <br /><br />
+                        <label for="animalHandling">Animal Handling </label>
+                        <input type="checkbox" value="animalHandling" name="proficiencies"></input>
+                        <br /><br />
+                        <label for="insight">Insight </label>
+                        <input type="checkbox" value="insight" name="proficiencies"></input>
+                        <br /><br />
+                        <label for="medicine">Medicine </label>
+                        <input type="checkbox" value="medicine" name="proficiencies"></input>
+                        <br /><br />
+                        <label for="perception">Perception </label>
+                        <input type="checkbox" value="perception" name="proficiencies"></input>
+                        <br /><br />
+                        <label for="survival">Survival </label>
+                        <input type="checkbox" value="survival" name="proficiencies"></input>
+                        <br /><br />
+                        <label for="deception">Deception </label>
+                        <input type="checkbox" value="deception" name="proficiencies"></input>
+                        <br /><br />
+                        <label for="intimidation">Intimidation </label>
+                        <input type="checkbox" value="intimidation" name="proficiencies"></input>
+                        <br /><br />
+                        <label for="performance">Performance </label>
+                        <input type="checkbox" value="performance" name="proficiencies"></input>
+                        <br /><br />
+                        <label for="persuasion">Persuasion </label>
+                        <input type="checkbox" value="persuasion" name="proficiencies"></input>
                     </div>
+                    <br />
                 </div>
                 <div class="form-actions">
-                    <button class="btn btn-primary js-tooltip" title=""
-                        data-original-title="Make a POST request on the Character List resource"> Save Character
-                    </button>
+                    <a href="/home">
+                        <button class="btn btn-primary js-tooltip" title=""
+                            data-original-title="Make a POST request on the Character List resource"> Save Character
+                        </button></a>
                 </div>
             </fieldset>
         </form>
-
+        <a href="/home"><button> Exit </button></a>
     </div>
