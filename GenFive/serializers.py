@@ -19,4 +19,4 @@ class CharacterSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Character
         fields = ['name', 'race', 'characterClass', 'wisdom', 'charisma', 'strength', 'dexterity', 'constitution',
-                  'intelligence', 'hp', 'ac', 'attackBonus', 'speed', 'spellSaveDC', 'equipment', 'proficiencies', 'attackBonus']
+                  'intelligence', 'hp', 'ac', 'attackBonus', 'speed', 'spellSaveDC', 'equipment', 'athletics', 'arcana', 'investigation', 'nature', 'religion', 'history', 'stealth', 'sleightOfHand', 'acrobatics', 'performance', 'deception', 'intimidation', 'persuasion', 'insight', 'animalHandling', 'medicine', 'survival', 'perception', 'attackBonus']
