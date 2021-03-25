@@ -1,10 +1,11 @@
-<!--<script src="../../static/creation.js"></script>-->
+<script src="../../static/creation.js"></script>
 
 <div className="Creation">
     <h1>Create Your Character</h1>
     <p>Choose wisely!</p>
     <div class="tab-pane active" id="post-object-form">
-        <form action="/characters/" method="POST" enctype="multipart/form-data" class="form-horizontal" novalidate="">
+        <form action="/characters/" method="POST" enctype="multipart/form-data" class="form-horizontal" novalidate=""
+            id="creationForm" target="_blank">
             <fieldset>
                 <input type="hidden" name="csrfmiddlewaretoken"
                     value="xhqDJfxeQKNKFXAGTHGxsdKsqvXx11WGDgOYpv6wZh4zAQhpl62FeAxykV5wUfMX">
@@ -122,7 +123,6 @@
                     </div>
                 </div>
                 <div class="form-group ">
-
                     <label class="col-sm-2 control-label ">
                         Attack Bonus
                     </label>
@@ -215,12 +215,19 @@
                     </div>
                     <br />
                 </div>
+                <!--
                 <div class="form-actions">
                     <a href="/home">
                         <button class="btn btn-primary js-tooltip" title=""> Save Character
                         </button></a>
                 </div>
+                <a href="/home">
+                    <input type="submit" value="Submit"></a>-->
+                <input onclick="window.location.href = '/home';" type="submit" value="Save Character" />
+                <!--<a href="/home"><button onClick="submitForm()"> Save Character </button></a>-->
             </fieldset>
         </form>
         <a href="/home"><button> Exit </button></a>
     </div>
+
+</div>

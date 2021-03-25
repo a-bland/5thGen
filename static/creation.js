@@ -1,5 +1,9 @@
 var baseURL = 'https://www.dnd5eapi.co/api/';
 
+function submitForm() {
+    document.getElementById("creationForm").submit();
+    document.location.href = "http://127.0.0.1:8000/home";
+}
 function displayClassInfo() {
     //document.getElementById('characterClass').options[0].selected = true;
     var selectedClass = document.getElementById('characterClass').value;
