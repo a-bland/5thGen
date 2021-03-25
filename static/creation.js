@@ -6,7 +6,7 @@ function submitForm() {
 }
 function displayClassInfo() {
     //document.getElementById('characterClass').options[0].selected = true;
-    var selectedClass = document.getElementById('characterClass').value;
+    var selectedClass = document.getElementById("characterClass").value;
     var subURL = 'classes/';
     var completeURL = baseURL + subURL + selectedClass;
     fetch(completeURL)
