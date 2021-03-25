@@ -12,7 +12,7 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
 class GroupSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Group
-        fields = ['url', 'name']
+        fields = ['partyName', 'player1', 'player2', 'player3', 'player4']
 
 
 class CharacterSerializer(serializers.HyperlinkedModelSerializer):
