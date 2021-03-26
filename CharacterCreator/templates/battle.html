@@ -1,47 +1,49 @@
 <script src="../../static/battle.js"></script>
 
 <div>
-            <h1>Battle Simulator</h1>
-            <p>CHARACTER NAME (Race Class)</p>
-            <h3>HP: XX</h3>
-            <h3>AC: XX</h3>
-            <h3>Speed: XX</h3>
-            <h4>Turn Order</h4>
-            <label for="inventory">Inventory</label>
-            <br />
-            <input type="text" id="inventory"></input>
-            <br /><br />
-            <label for="spellList">Spells</label>
-            <br />
-            <input type="text" id="spellList"></input>
-            <br /><br />
-            <label for="spellSlots">Spell Slots</label>
-            <br />
-            <input type="text" id="spellSlots"></input>
-            <br /><br />
-            <label for="statusEffects">Status Effects</label>
-            <br />
-            <input type="text" id="statusEffects"></input>
-            <form>
-                <input type="radio" id="standard" defaultChecked="true" name="rollType"></input>
-                <label for="standard" > Standard </label>
-                <input type="radio" id="advantage" name="rollType"></input>
-                <label for="advantage"> Advantage </label>
-                <input type="radio" id="disadvantage" name="rollType"></input>
-                <label for="disadvantage"> Disadvantage </label>
-            </form>
-            <button onClick="rolld20()"> Roll D20 </button>
-            <br /><br />
-            <label for="rollNumber">Number of Dice</label>
-            <input type="number" id="rollNumber" defaultValue="1" min="1"></input>
-            <br />
-            <label for="diceType">Type of Dice</label>
-            <input type="number" id="diceType" defaultValue="6" min="2" step="2" max="100"></input>
-            <br />
-            <button onClick="roll()">Roll</button>
-            <br /><br />
-            <br /><br />
-            <a href="/">
-                <button> End Battle </button>
-            </a>
-        </div>
+    <h1>Battle Simulator</h1>
+    <p>CHARACTER NAME (Race Class)</p>
+    <img src="../static/assets/forest1.jpg" height="400" width="500" style="float: left;" />
+    <h3 style="color:Tomato;">HP:</h3>
+    <input type="number">
+    <h3>AC: XX</h3>
+    <h3>Speed: XX</h3>
+    <h4>Turn Order</h4>
+    <label for="inventory">Inventory</label>
+    <br />
+    <input type="text" id="inventory"></input>
+    <br /><br />
+    <label for="spellList">Spells</label>
+    <br />
+    <input type="text" id="spellList"></input>
+    <br /><br />
+    <label for="spellSlots">Spell Slots</label>
+    <br />
+    <input type="text" id="spellSlots"></input>
+    <br /><br />
+    <label for="statusEffects">Status Effects</label>
+    <br />
+    <input type="text" id="statusEffects"></input>
+    <form>
+        <input type="radio" id="standard" defaultChecked="true" name="rollType"></input>
+        <label for="standard"> Standard </label>
+        <input type="radio" id="advantage" name="rollType"></input>
+        <label for="advantage"> Advantage </label>
+        <input type="radio" id="disadvantage" name="rollType"></input>
+        <label for="disadvantage"> Disadvantage </label>
+    </form>
+    <button onClick="rolld20()"> Roll D20 </button>
+    <br /><br />
+    <label for="rollNumber">Number of Dice</label>
+    <input type="number" id="rollNumber" defaultValue="1" min="1"></input>
+    <br />
+    <label for="diceType">Type of Dice</label>
+    <input type="number" id="diceType" defaultValue="6" min="2" step="2" max="100"></input>
+    <br />
+    <button onClick="roll()">Roll</button>
+    <br /><br />
+    <br /><br />
+    <a href="/home">
+        <button> End Battle </button>
+    </a>
+</div>

@@ -1,141 +1,246 @@
 <script src="../../static/creation.js"></script>
 
 <div className="Creation">
-            <h1>Create Your Character</h1>
-            <p>Choose wisely!</p>
-            <form action="Creation" method="post" id="CharacterCreation">
-                <input type="text" placeholder="Character Name" id="characterName"></input>
-                <br /><br />
-                <div className="custom-select" id="race">
-                    <select>
-                        <option value="0">Select race:</option>
-                        <option value="dwarf">Dwarf</option>
-                        <option value="elf">Elf</option>
-                        <option value="halfling">Halfling</option>
-                        <option value="human">Human</option>
-                        <option value="dragonborn">Dragonborn</option>
-                        <option value="gnome">Gnome</option>
-                        <option value="half-elf">Half-Elf</option>
-                        <option value="half-orc">Half-Orc</option>
-                        <option value="tiefling">Tiefling</option>
-                    </select>
+    <h1>Create Your Character</h1>
+    <p>Choose wisely!</p>
+    <div class="tab-pane active" id="post-object-form">
+        <form action="/characters/" method="POST" enctype="multipart/form-data" class="form-horizontal" novalidate=""
+            id="creationForm" target="_blank">
+            <fieldset>
+                <input type="hidden" name="csrfmiddlewaretoken"
+                    value="xhqDJfxeQKNKFXAGTHGxsdKsqvXx11WGDgOYpv6wZh4zAQhpl62FeAxykV5wUfMX">
+                <div class="form-group ">
+                    <label class="col-sm-2 control-label ">
+                        Name
+                    </label>
+                    <div class="col-sm-10">
+                        <input name="name" class="form-control" type="text" value="">
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label class="col-sm-2 control-label ">
+                        Race
+                    </label>
+                    <div class="col-sm-10">
+                        Dwarf <input name="race" class="form-control" type="radio" value="dwarf"><br />
+                        Elf <input name="race" class="form-control" type="radio" value="elf"><br />
+                        Half-elf <input name="race" class="form-control" type="radio" value="half-elf"><br />
+                        Half-orc <input name="race" class="form-control" type="radio" value="half-orc"><br />
+                        Halfling <input name="race" class="form-control" type="radio" value="halfling"><br />
+                        Human <input name="race" class="form-control" type="radio" value="human"><br />
+                        Dragonborn <input name="race" class="form-control" type="radio" value="dragonborn"><br />
+                        Gnome <input name="race" class="form-control" type="radio" value="gnome"><br />
+                        Tiefling <input name="race" class="form-control" type="radio" value="tiefling"><br />
+                    </div>
                 </div>
                 <br />
-                <div className="custom-select">
-                    <select id='characterClass' onChange={displayClassInfo}>
-                        <option value="0">Select class:</option>
-                        <option value="barbarian" >Barbarian</option>
-                        <option value="bard">Bard</option>
-                        <option value="cleric">Cleric</option>
-                        <option value="druid">Druid</option>
-                        <option value="fighter">Fighter</option>
-                        <option value="monk">Monk</option>
-                        <option value="paladin">Paladin</option>
-                        <option value="ranger">Ranger</option>
-                        <option value="rogue">Rogue</option>
-                        <option value="sorcerer">Sorcerer</option>
-                        <option value="warlock">Warlock</option>
-                        <option value="wizard">Wizard</option>
-                    </select>
+                <div class="form-group ">
+                    <label class="col-sm-2 control-label ">
+                        Class
+                    </label>
+                    <div class="col-sm-10">
+                        Barbarian<input name="characterClass" id="characterClass" class="form-control" type="radio"
+                            value="barbarian"><br />
+                        Bard <input name=" characterClass" id="characterClass" class="form-control" type="radio"
+                            value="bard"><br />
+                        Cleric <input name=" characterClass" class="form-control" id="characterClass" type="radio"
+                            value="cleric"><br />
+                        Druid <input name=" characterClass" class="form-control" type="radio" id="characterClass"
+                            value="druid"><br />
+                        Fighter <input name=" characterClass" id="characterClass" class="form-control" type="radio"
+                            value="fighter"><br />
+                        Monk <input name=" characterClass" id="characterClass" class="form-control" type="radio"
+                            value="monk"><br />
+                        Paladin <input name=" characterClass" id="characterClass" class="form-control" type="radio"
+                            value="paladin"><br />
+                        Ranger <input name=" characterClass" id="characterClass" class="form-control" type="radio"
+                            value="ranger"><br />
+                        Rogue <input name=" characterClass" id="characterClass" class="form-control" type="radio"
+                            value="rogue"><br />
+                        Sorcerer <input name=" characterClass" id="characterClass" class="form-control" type="radio"
+                            value="sorcerer"><br />
+                        Warlock <input name=" characterClass" id="characterClass" class="form-control" type="radio"
+                            value="warlock"><br />
+                        Wizard <input name=" characterClass" id="characterClass" class="form-control" type="radio"
+                            value="wizard"><br />
+                    </div>
                 </div>
-                <br />
-                <fieldset className="stats">
-                    <label for="intelligence">Intelligence </label>
-                    <input type="number" min="0" max="20" id="intelligence" defaultValue="10"></input>
-                    <br /><br />
-                    <label for="dexterity">Dexterity </label>
-                    <input type="number" min="0" max="20" id="dexterity" defaultValue="10"></input>
-                    <br /><br />
-                    <label for="charisma">Charisma </label>
-                    <input type="number" min="0" max="20" id="charisma" defaultValue="10"></input>
-                    <br /><br />
-                    <label for="strength">Strength </label>
-                    <input type="number" min="0" max="20" id="strength" defaultValue="10"></input>
-                    <br /><br />
-                    <label for="constitution">Constitution </label>
-                    <input type="number" min="0" max="20" id="constitution" defaultValue="10"></input>
-                    <br /><br />
-                    <label for="wisdom">Wisdom </label>
-                    <input type="number" min="0" max="20" id="widsom" defaultValue="10"></input>
-                </fieldset>
                 <br /><br />
-                <fieldset>
-                    <label for="athletics">Athletics </label>
-                    <input type="checkbox" id="athletics" className="proficiencies"></input>
-                    <br /><br />
-                    <label for="acrobatics">Acrobatics </label>
-                    <input type="checkbox" id="acrobatics" className="proficiencies"></input>
-                    <br /><br />
-                    <label for="sleightOfHand">Sleight of Hand </label>
-                    <input type="checkbox" id="sleightOfHand" className="proficiencies"></input>
-                    <br /><br />
-                    <label for="stealth">Stealth </label>
-                    <input type="checkbox" id="stealth" className="proficiencies"></input>
-                    <br /><br />
-                    <label for="arcana">Arcana </label>
-                    <input type="checkbox" id="arcana" className="proficiencies"></input>
-                    <br /><br />
-                    <label for="history">History </label>
-                    <input type="checkbox" id="history" className="proficiencies"></input>
-                    <br /><br />
-                    <label for="investigation">Investigation </label>
-                    <input type="checkbox" id="investigation" className="proficiencies"></input>
-                    <br /><br />
-                    <label for="nature">Nature </label>
-                    <input type="checkbox" id="nature" className="proficiencies"></input>
-                    <br /><br />
-                    <label for="religion">Religion</label>
-                    <input type="checkbox" id="religion" className="proficiencies"></input>
-                    <br /><br />
-                    <label for="animalHandling">Animal Handling </label>
-                    <input type="checkbox" id="animalHandling" className="proficiencies"></input>
-                    <br /><br />
-                    <label for="insight">Insight </label>
-                    <input type="checkbox" id="insight" className="proficiencies"></input>
-                    <br /><br />
-                    <label for="medicine">Medicine </label>
-                    <input type="checkbox" id="medicine" className="proficiencies"></input>
-                    <br /><br />
-                    <label for="perception">Perception </label>
-                    <input type="checkbox" id="perception" className="proficiencies"></input>
-                    <br /><br />
-                    <label for="survival">Survival </label>
-                    <input type="checkbox" id="survival" className="proficiencies"></input>
-                    <br /><br />
-                    <label for="deception">Deception </label>
-                    <input type="checkbox" id="deception" className="proficiencies"></input>
-                    <br /><br />
-                    <label for="intimidation">Intimidation </label>
-                    <input type="checkbox" id="intimidation" className="proficiencies"></input>
-                    <br /><br />
-                    <label for="performance">Performance </label>
-                    <input type="checkbox" id="performance" className="proficiencies"></input>
-                    <br /><br />
-                    <label for="persuasion">Persuasion </label>
-                    <input type="checkbox" id="persuasion" className="proficiencies"></input>
-                </fieldset>
-                <label for="profiencyBonus">Profiency Bonus </label>
-                <input type="number" id="profiencyBonus"></input>
+                <div class="form-group ">
+                    <label class="col-sm-2 control-label ">
+                        Wisdom
+                    </label>
+                    <div class="col-sm-10">
+                        <input name="wisdom" class="form-control" type="number" min="0" max="20" value="10">
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label class="col-sm-2 control-label ">
+                        Charisma
+                    </label>
+                    <div class="col-sm-10">
+                        <input name="charisma" class="form-control" type="number" min="0" max="20" value="10">
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label class="col-sm-2 control-label ">
+                        Strength
+                    </label>
+                    <div class="col-sm-10">
+                        <input name="strength" class="form-control" type="number" min="0" max="20" value="10">
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label class="col-sm-2 control-label ">
+                        Dexterity
+                    </label>
+                    <div class="col-sm-10">
+                        <input name="dexterity" class="form-control" type="number" min="0" max="20" value="10">
+                    </div>
+                </div>
+                <div class="form-group ">
+
+                    <label class="col-sm-2 control-label ">
+                        Constitution
+                    </label>
+                    <div class="col-sm-10">
+                        <input name="constitution" class="form-control" type="number" min="0" max="20" value="10">
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label class="col-sm-2 control-label ">
+                        Intelligence
+                    </label>
+                    <div class="col-sm-10">
+                        <input name="intelligence" class="form-control" type="number" min="0" max="20" value="10">
+                    </div>
+                </div>
                 <br /><br />
-                <label for="spellSave">Spell Save DC </label>
-                <input type="number" id="spellSave"></input>
-                <br /><br />
-                <label for="hp">HP </label>
-                <input type="number" id="hp"></input>
-                <br /><br />
-                <label for="ac">Armor Class </label>
-                <input type="number" id="ac"></input>
-                <br /><br />
-                <label for="attackBonus">Attack Bonus </label>
-                <input type="number" id="attackBonus"></input>
-                <br /><br />
-                <label for="speed">Speed </label>
-                <input type="number" id="speed"></input>
-                <br /><br />
-                <label for="equipment">Equipment </label>
-                <input type="text" id="equipment"></input>
-                <br /><br />
-            </form>
-            <br /><br />
-            <a href="/"><button onClick={sendInfo}> Save Character </button></a>
-</div >
+                <div class="form-group ">
+
+                    <label class="col-sm-2 control-label ">
+                        Health
+                    </label>
+                    <div class="col-sm-10">
+                        <input name="hp" class="form-control" type="number" min="0" value="">
+                    </div>
+                </div>
+                <div class="form-group ">
+
+                    <label class="col-sm-2 control-label ">
+                        Armor Class
+                    </label>
+                    <div class="col-sm-10">
+                        <input name="ac" class="form-control" type="number" min="0" value="">
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label class="col-sm-2 control-label ">
+                        Attack Bonus
+                    </label>
+                    <div class="col-sm-10">
+                        <input name="attackBonus" class="form-control" type="number" min="0" value="">
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label class="col-sm-2 control-label ">
+                        Speed
+                    </label>
+                    <div class="col-sm-10">
+                        <input name="speed" class="form-control" type="number" min="0" value="">
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label class="col-sm-2 control-label ">
+                        Spell Save DC
+                    </label>
+                    <div class="col-sm-10">
+                        <input name="spellSaveDC" class="form-control" type="number" min="0" value="">
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label class="col-sm-2 control-label ">
+                        Equipment
+                    </label>
+                    <div class="col-sm-10">
+                        <input name="equipment" class="form-control" type="text" value="">
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label class="col-sm-2 control-label ">
+                        Proficiencies
+                    </label>
+                    <div class="col-sm-10">
+                        <label for="athletics">Athletics </label>
+                        <input type="checkbox" name="athletics"></input>
+                        <br /><br />
+                        <label for="acrobatics">Acrobatics </label>
+                        <input type="checkbox" name="acrobatics"></input>
+                        <br /><br />
+                        <label for="sleightOfHand">Sleight of Hand </label>
+                        <input type="checkbox" name="sleightOfHand"></input>
+                        <br /><br />
+                        <label for="stealth">Stealth </label>
+                        <input type="checkbox" name="stealth"></input>
+                        <br /><br />
+                        <label for="arcana">Arcana </label>
+                        <input type="checkbox" name="arcana"></input>
+                        <br /><br />
+                        <label for="history">History </label>
+                        <input type="checkbox" name="history"></input>
+                        <br /><br />
+                        <label for="investigation">Investigation </label>
+                        <input type="checkbox" name="investigation"></input>
+                        <br /><br />
+                        <label for="nature">Nature </label>
+                        <input type="checkbox" name="nature"></input>
+                        <br /><br />
+                        <label for="religion">Religion</label>
+                        <input type="checkbox" name="religion"></input>
+                        <br /><br />
+                        <label for="animalHandling">Animal Handling </label>
+                        <input type="checkbox" name="animalHandling"></input>
+                        <br /><br />
+                        <label for="insight">Insight </label>
+                        <input type="checkbox" name="insight"></input>
+                        <br /><br />
+                        <label for="medicine">Medicine </label>
+                        <input type="checkbox" name="medicine"></input>
+                        <br /><br />
+                        <label for="perception">Perception </label>
+                        <input type="checkbox" name="perception"></input>
+                        <br /><br />
+                        <label for="survival">Survival </label>
+                        <input type="checkbox" name="survival"></input>
+                        <br /><br />
+                        <label for="deception">Deception </label>
+                        <input type="checkbox" name="deception"></input>
+                        <br /><br />
+                        <label for="intimidation">Intimidation </label>
+                        <input type="checkbox" name="intimidation"></input>
+                        <br /><br />
+                        <label for="performance">Performance </label>
+                        <input type="checkbox" name="performance"></input>
+                        <br /><br />
+                        <label for="persuasion">Persuasion </label>
+                        <input type="checkbox" name="persuasion"></input>
+                    </div>
+                    <br />
+                </div>
+                <!--
+                <div class="form-actions">
+                    <a href="/home">
+                        <button class="btn btn-primary js-tooltip" title=""> Save Character
+                        </button></a>
+                </div>
+                <a href="/home">
+                    <input type="submit" value="Submit"></a>-->
+                <input type="reset" value="Reset"><br /><br />
+                <input onClick="window.location.href = '/home';" type="submit" value="Save Character" />
+                <!--<a href="/home"><button onClick="submitForm()"> Save Character </button></a>-->
+            </fieldset>
+        </form>
+        <a href="/home"><button> Exit </button></a>
+    </div>
+
+</div>
