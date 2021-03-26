@@ -140,6 +140,8 @@ While there are other products that individually offer the services our product 
 - [Tests](https://github.com/tazemaster/5thGen/blob/main/CharacterCreator/tests.py)
 - [Product Demonstration](https://youtu.be/_6WL4rfM5Z0)
 
+## Task Allocation
+
 - Gavin:
 - Annabel:
 - Liam: 
