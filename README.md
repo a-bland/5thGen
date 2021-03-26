@@ -128,3 +128,20 @@ While there are other products that individually offer the services our product 
 - Liam: Learning GraphQL for Django
 - Stephanie: Learning GraphQL for Django.
 - David: Learning more Django throughout the week, helped with the switch to the current Django app
+
+# Sprint 8
+
+- [Trello Board](https://trello.com/b/LyoSdg5y/genfive)
+- [Burndown Chart](https://docs.google.com/spreadsheets/d/1ydDIiCTdacYRQR8fYd0A7m_4bHwZ8VrwFOkmBXNZUwo/edit?usp=sharing)
+- [Velocity Chart](https://docs.google.com/spreadsheets/d/1zmuhoPPeO9SQrvBysmMswbhSMYx34nLcfIQ-MMtw9Ho/edit?usp=sharing)
+- [System Architecture](https://github.com/tazemaster/GenFive/blob/main/artifacts/architecture.md)
+- [HTML Code](https://github.com/tazemaster/5thGen/tree/main/CharacterCreator/templates)
+- [JavaScript/Python Code](https://github.com/tazemaster/5thGen/tree/main/static)
+- [Tests](https://github.com/tazemaster/5thGen/blob/main/CharacterCreator/tests.py)
+- [Product Demonstration](https://youtu.be/_6WL4rfM5Z0)
+
+-Gavin:
+-Annabel:
+-Liam:
+-Stephanie:
+-David:
