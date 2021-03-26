@@ -1,10 +1,10 @@
 from rest_framework import viewsets
-from GenFive.serializers import UserSerializer, GroupSerializer, CharacterSerializer
+from GenFive.serializers import UserSerializer, PartiesSerializer, CharacterSerializer
 from rest_framework import permissions
 from django.shortcuts import render
 from django.http import Http404
 from django.contrib.auth.models import User, Group
-from CharacterCreator.models import Character, User
+from CharacterCreator.models import Character, User, Parties
 from django.views.decorators.csrf import csrf_exempt
 
 
@@ -33,10 +33,10 @@ class UserViewSet(viewsets.ModelViewSet):
     permission_classes = [permissions.IsAuthenticated]
 
 
-class GroupViewSet(viewsets.ModelViewSet):
-    # API endpoint that allows groups to be viewed or edited.
-    queryset = Group.objects.all()
-    serializer_class = GroupSerializer
+class PartiesViewSet(viewsets.ModelViewSet):
+    # API endpoint that allows Parties to be viewed or edited.
+    queryset = Parties.objects.all()
+    serializer_class = PartiesSerializer
     permission_classes = [permissions.IsAuthenticated]
 
 
