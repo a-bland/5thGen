@@ -1,6 +1,9 @@
 function showPartyForm() {
-    document.getElementById("createParty").style.display = "block";
+    document.getElementById("partyForm").style.display = "block";
+    //document.getElementById("cancelParty").style.display = "inline";
 }
 function hidePartyForm() {
-    document.getElementById("createParty").style.display = "none";
+    window.location.href = 'http://127.0.0.1:8000/home'
+    document.getElementById("partyForm").style.display = "none";
+    //document.getElementById("cancelParty").style.display = "none";
 }

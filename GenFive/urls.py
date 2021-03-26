@@ -9,7 +9,7 @@ from rest_framework import routers, serializers, viewsets
 # Routers provide an easy way of automatically determining the URL conf.
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
-router.register(r'groups', views.GroupViewSet)
+router.register(r'parties', views.PartiesViewSet)
 router.register(r'characters', views.CharacterViewSet)
 
 urlpatterns = [

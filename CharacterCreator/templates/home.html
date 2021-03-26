@@ -11,15 +11,18 @@
 	</a>
 	<br /><br />
 	<h2>Your Parties</h2>
+	<form id="getParties" action="/parties/" method="GET">
+		<input type="submit" value="Display Parties">
+	</form>
 	<button onClick="showPartyForm()"> Create a Party </button>
-	<form id="createParty" style="display:none;" action="/groups" method="POST">
+	<form id="createParty" style="display:none;" action="/parties/" method="POST" target="_blank">
 		Party name<input type="text" name="partyName"><br />
 		Player 1's email<input type="email" name="player1"><br />
 		Player 2's email<input type="email" name="player2"><br />
 		Player 3's email<input type="email" name="player3"><br />
 		Player 4's email<input type="email" name="player4"><br />
-		<input type="submit" value="Create">
-		<button onClick="hidePartyForm()"> Cancel </button>
+		<input onClick="hidePartyForm();" type="submit" value="Create">
+		<button id="cancelParty" onClick="hidePartyForm()"> Cancel </button>
 	</form>
 	<br /><br /><br />
 	<a href="/battle">

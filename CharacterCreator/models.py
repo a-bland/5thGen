@@ -40,9 +40,11 @@ class Character(models.Model):
 
 class User(models.Model):
     username = models.CharField(max_length=100)
+    email = models.CharField(max_length=100)
+    password = models.CharField(max_length=100)
 
 
-class Group(models.Model):
+class Parties(models.Model):
     partyName = models.CharField(max_length=100)
     player1 = models.CharField(max_length=100)
     player2 = models.CharField(max_length=100)
