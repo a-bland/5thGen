@@ -11,11 +11,11 @@
 	</a>
 	<br /><br />
 	<h2>Your Parties</h2>
-	<form id="getParties" action="/parties/" method="GET">
-		<input type="submit" value="Display Parties">
-	</form>
+	{% for party in parties.all %}
+	{{ party }}
+	{% endfor %}
 	<button onClick="showPartyForm()"> Create a Party </button>
-	<form id="createParty" style="display:none;" action="/parties/" method="POST" target="_blank">
+	<form id="partyForm" style="display:none;" action="/parties/" method="POST" target="_blank">
 		Party name<input type="text" name="partyName"><br />
 		Player 1's email<input type="email" name="player1"><br />
 		Player 2's email<input type="email" name="player2"><br />

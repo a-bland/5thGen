@@ -20,7 +20,11 @@ def battle(request):
     return render(request, 'battle.html')
 
 
+def partyInfo(request):
+    parties = Parties.objects
+    return render(request, 'parties/home', {'Parties': parties})
 # from django.contrib.auth.models import User, Group
+
 
 class UserViewSet(viewsets.ModelViewSet):
     # API endpoint that allows users to be viewed or edited.
