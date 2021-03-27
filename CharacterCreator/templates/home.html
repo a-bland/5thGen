@@ -1,21 +1,26 @@
 <script src="../../static/home.js"></script>
 <link rel="stylesheet" href="./home.css">
 
-<div>
+<div style="text-align:center;">
 	<h1>Gen Five</h1>
 	<p>Welcome to our battle simulator.</p>
 	<h2>Your Characters</h2>
-
+	{% for character in characters.all %}
+	{{ character.name }}
+	{% endfor %}
+	<br /><br />
 	<a href="/creation">
 		<button> Create a New Character </button>
 	</a>
 	<br /><br />
 	<h2>Your Parties</h2>
 	{% for party in parties.all %}
-	{{ party }}
+	{{ party.partyName }}
 	{% endfor %}
+	<br /><br />
 	<button onClick="showPartyForm()"> Create a Party </button>
-	<form id="partyForm" style="display:none;" action="/parties/" method="POST" target="_blank">
+	<form id="partyForm" style="display:none;" action="/parties/" method="POST" enctype="multipart/form-data"
+		target="_blank">
 		Party name<input type="text" name="partyName"><br />
 		Player 1's email<input type="email" name="player1"><br />
 		Player 2's email<input type="email" name="player2"><br />
@@ -27,5 +32,9 @@
 	<br /><br /><br />
 	<a href="/battle">
 		<button> Start Battle </button>
+	</a>
+	<br /><br />
+	<a href="/login">
+		<button> Sign Out </button>
 	</a>
 </div>

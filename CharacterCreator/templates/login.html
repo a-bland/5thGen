@@ -1,0 +1,17 @@
+<script src="../../static/login.js"></script>
+
+<div style="text-align:center;">
+    <form action="/users/" method="GET" target="_blank" enctype="multipart/form-data" class="form-horizontal"
+        novalidate="">
+        <div>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br /><br />
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="pwd"><br /><br />
+        </div>
+        <div class="form-actions">
+            <button class="btn btn-primary js-tooltip" onClick="login()">Log In</button>
+        </div>
+    </form>
+    <a href="http://127.0.0.1:8000/register"><button> Register </button></a>
+</div>

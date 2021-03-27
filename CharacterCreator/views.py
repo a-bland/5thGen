@@ -9,7 +9,17 @@ from django.views.decorators.csrf import csrf_exempt
 
 
 def home(request):
-    return render(request, 'home.html')
+    parties = Parties.objects
+    characters = Character.objects
+    return render(request, 'home.html', {'parties': parties, 'characters': characters})
+
+
+def login(request):
+    return render(request, 'login.html')
+
+
+def register(request):
+    return render(request, 'register.html')
 
 
 def creation(request):

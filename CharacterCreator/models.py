@@ -37,6 +37,15 @@ class Character(models.Model):
     attackBonus = models.IntegerField()
     equipment = models.CharField(max_length=1000)
 
+    def get_name(self):
+        return self.name
+    
+    def get_race(self):
+        return self.race
+    
+    def get_characterClass(self):
+        return self.characterClass
+
 
 class User(models.Model):
     username = models.CharField(max_length=100)

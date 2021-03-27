@@ -16,6 +16,8 @@ urlpatterns = [
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('', include(router.urls)),
     path('admin/', admin.site.urls),
+    path('login/', views.login),
+    path('register', views.register),
     path('home', views.home, name='home'),
     path('creation', views.creation),
     path('battle', views.battle),
