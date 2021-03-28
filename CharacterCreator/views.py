@@ -15,7 +15,8 @@ def home(request):
 
 
 def login(request):
-    return render(request, 'login.html')
+    users = User.objects
+    return render(request, 'login.html', {'users': users})
 
 
 def register(request):
@@ -27,18 +28,13 @@ def creation(request):
 
 
 def battle(request):
-    return render(request, 'battle.html')
-
-
-def partyInfo(request):
     parties = Parties.objects
-    return render(request, 'parties/home', {'Parties': parties})
-# from django.contrib.auth.models import User, Group
+    characters = Character.objects
+    return render(request, 'battle.html', {'parties': parties, 'characters': characters})
 
 
 class UserViewSet(viewsets.ModelViewSet):
     # API endpoint that allows users to be viewed or edited.
-    # queryset = User.objects.all().order_by('-date_joined')
     queryset = User.objects.all()
     serializer_class = UserSerializer
     permission_classes = [permissions.IsAuthenticated]
