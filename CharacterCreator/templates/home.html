@@ -35,13 +35,13 @@
 		<br /><br />
 		<h2>Your Parties</h2>
 		{% for party in parties.all %}
-		<button onClick="showPartyInfo()">{{ party.partyName }}</button><br />
+		<button onClick="showPartyInfo()">{{ party.partyName }}</button><br /><br />
 		<div id="partyInfo" style="display:none">
 			Player 1: {{party.player1}}<br />
 			Player 1: {{party.player2}}<br />
 			Player 1: {{party.player3}}<br />
 			Player 1: {{party.player4}}<br />
-			<a href="/battle"><button> Start Battle </button></a>
+			<a href="/battle"><button> Start Battle </button></a><br /><br />
 		</div>
 		{% endfor %}
 		<br /><br />
