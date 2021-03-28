@@ -132,7 +132,7 @@ While there are other products that individually offer the services our product 
 # Sprint 8
 
 - [Trello Board](https://trello.com/b/LyoSdg5y/genfive)
-- [Burndown Chart](https://docs.google.com/spreadsheets/d/1ydDIiCTdacYRQR8fYd0A7m_4bHwZ8VrwFOkmBXNZUwo/edit?usp=sharing)
+- [Burndown Chart](https://docs.google.com/spreadsheets/d/1h3uxTDJw8QW1DkgBFrCE2acRNJfGSgUXAh_QpoQSeb0/edit?usp=sharing)
 - [Velocity Chart](https://docs.google.com/spreadsheets/d/1zmuhoPPeO9SQrvBysmMswbhSMYx34nLcfIQ-MMtw9Ho/edit?usp=sharing)
 - [System Architecture](https://github.com/tazemaster/GenFive/blob/main/artifacts/architecture.md)
 - [HTML Code](https://github.com/tazemaster/5thGen/tree/main/CharacterCreator/templates)
@@ -142,7 +142,7 @@ While there are other products that individually offer the services our product 
 
 ## Task Allocation
 
-- Gavin: Got the server live on Lightsail w/ Apache so others can visit page
+- Gavin: Got the server live on Lightsail w/ Apache so others can visit page & did Burndown/Velocity Charts
 - Annabel: added login/register pages, made battle page reflect stats of one of our characters, displayed parties to user
 - Liam: Added test cases, made video demo, made project presentation slides
 - Stephanie: Fixed up Trello Board to reflect current progress.
