@@ -46,12 +46,50 @@ class Character(models.Model):
     def get_characterClass(self):
         return self.characterClass
 
+    def get_characterProficiences(self):
+        profList = [False for i in range(18)]
+        profList[0] = self.athletics
+        profList[1] = self.acrobatics
+        profList[2] = self.sleightOfHand
+        profList[3] = self.stealth
+        profList[4] = self.arcana
+        profList[5] = self.history
+        profList[6] = self.investigation
+        profList[7] = self.nature
+        profList[8] = self.religion
+        profList[9] = self.animalHandling
+        profList[10] = self.insight
+        profList[11] = self.medicine
+        profList[12] = self.perception
+        profList[13] = self.survival
+        profList[14] = self.deception
+        profList[15] = self.intimidation
+        profList[16] = self.performance
+        profList[17] = self.persuasion
+        return profList
+
+    def get_character_hp(self):
+        return self.hp        
+
+    def get_character_ac(self):
+        return self.ac
+
+    def get_character_speed(self):
+        return self.speed
+
+    def get_character_spellSaveDC(self):
+        return self.spellSaveDC
+
+    def get_character_attackBonus(self):
+        return self.attackBonus
+
+    def get_character_equipment(self):
+        return self.equipment  
 
 class User(models.Model):
     username = models.CharField(max_length=100)
     email = models.CharField(max_length=100)
     password = models.CharField(max_length=100)
-
 
 class Parties(models.Model):
     partyName = models.CharField(max_length=100)
