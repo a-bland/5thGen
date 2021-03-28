@@ -3,17 +3,17 @@
 <head>
     <link rel="icon" href="../static/assets/g5.jpg">
 </head>
-<div>
+<div style="text-align:center;">
     <h1>Battle Simulator</h1>
-    <p>CHARACTER NAME (Race Class)</p>
+    <p>{{ character.name }} ({{character.race}} {{character.characterClass}}), member of {{party.partyName}}</p>
     <img src="../static/assets/forest1.jpg" height="400" width="500" style="float: left;" />
     <h3 style="color:Tomato;">HP:</h3>
-    <input type="number">
-    <h3>AC: XX</h3>
-    <h3>Speed: XX</h3>
+    <input type="number" max="{{character.hp}}">
+    <h3>AC: {{character.ac}}</h3>
+    <h3>Speed: {{character.speed}}</h3>
     <h4>Turn Order</h4>
-    <label for="inventory">Inventory</label>
-    <br />
+    <label for="inventory">Inventory</label><br />
+    {{character.equipment}}<br />
     <textarea cols="50" rows="5" id="inventory"></textarea>
     <br /><br />
     <label for="spellList">Spells</label>
@@ -29,6 +29,61 @@
     <label for="statusEffects">Status Effects</label>
     <br />
     <textarea cols="50" rows="5" id="statusEffects"></textarea>
+    <p>Proficiencies:</p>
+    {% if character.acrobatics %}
+    Acrobatics<br />
+    {% endif %}
+    {% if character.animalHandling == 1 %}
+    Animal Handling<br />
+    {% endif %}
+    {% if character.arcana == 1 %}
+    Arcana<br />
+    {% endif %}
+    {% if character.athletics == 1 %}
+    Athletics<br />
+    {% endif %}
+    {% if character.deception == 1 %}
+    Deception<br />
+    {% endif %}
+    {% if character.history == 1 %}
+    History<br />
+    {% endif %}
+    {% if character.insight == 1 %}
+    Insight<br />
+    {% endif %}
+    {% if character.initmidation == 1 %}
+    Intimidation<br />
+    {% endif %}
+    {% if character.investigation == 1 %}
+    Investigation<br />
+    {% endif %}
+    {% if character.medicine == 1 %}
+    Medicine<br />
+    {% endif %}
+    {% if character.nature == 1 %}
+    Nature<br />
+    {% endif %}
+    {% if character.perception == 1 %}
+    Perception<br />
+    {% endif %}
+    {% if character.peformance == 1 %}
+    Performance<br />
+    {% endif %}
+    {% if character.persuasion == 1 %}
+    Persuasion<br />
+    {% endif %}
+    {% if character.religion == 1 %}
+    Religion<br />
+    {% endif %}
+    {% if character.sleightOfHand == 1 %}
+    Sleight of Hand<br />
+    {% endif %}
+    {% if character.stealth == 1 %}
+    Stealth<br />
+    {% endif %}
+    {% if character.survival == 1 %}
+    Survival<br />
+    {% endif %}
     <form>
         <input type="radio" id="standard" defaultChecked="true" name="rollType"></input>
         <label for="standard"> Standard </label>

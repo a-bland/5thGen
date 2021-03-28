@@ -15,8 +15,8 @@ def home(request):
 
 
 def login(request):
-    users = User.objects
-    return render(request, 'login.html', {'users': users})
+    allUsers = User.objects
+    return render(request, 'login.html', {'allUsers': allUsers})
 
 
 def register(request):
@@ -28,9 +28,9 @@ def creation(request):
 
 
 def battle(request):
-    parties = Parties.objects
-    characters = Character.objects
-    return render(request, 'battle.html', {'parties': parties, 'characters': characters})
+    party = Parties.objects.get(pk=1)
+    character = Character.objects.get(pk=18)
+    return render(request, 'battle.html', {'party': party, 'character': character})
 
 
 class UserViewSet(viewsets.ModelViewSet):
