@@ -143,7 +143,7 @@ While there are other products that individually offer the services our product 
 ## Task Allocation
 
 - Gavin:
-- Annabel:
+- Annabel: added login/register pages, made battle page reflect stats of one of our characters, displayed parties to user
 - Liam: Added test cases, made video demo, made project presentation slides
 - Stephanie: Fixed up Trello Board to reflect current progress.
 - David: 
