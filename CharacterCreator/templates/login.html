@@ -1,14 +1,34 @@
-<div>
-    <form action="/users/" method="POST" enctype="multipart/form-data" class="form-horizontal" novalidate="">
+<!--<script src="../../static/login.js"></script>-->
+<script>
+    function compare() {
+
+    }
+    function login(test, username, password) {
+        console.log(test);
+        window.location.href = 'http://127.0.0.1:8000/home';
+    }
+</script>
+
+<head>
+    <link rel="icon" href="../static/assets/g5.jpg">
+</head>
+<div style="text-align:center;">
+    <form action="/users/" method="GET" target="_blank" enctype="multipart/form-data" class="form-horizontal"
+        novalidate="">
         <div>
             <label for="username">Username:</label><br>
-            <input type="text" id="username" name ="username"><br>
-            <label for="pwd">Password:</label><br>
-            <input type="password" id="pwd" name ="pwd">
+            <input type="text" id="username" name="username" value="annabel"><br /><br />
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br /><br />
         </div>
         <div class="form-actions">
-            <button class="btn btn-primary js-tooltip" title=""
-                data-original-title="Make a POST request on the Log In resource">Log In</button>
+            {% for user in users.all %}
+            {% if username == user.username %} <h1>test</h1>
+            {% else %}<p>different test</p>
+            {% endif %}
+            {% endfor %}
+            <button class="btn btn-primary js-tooltip" onClick="login()">Log In</button>
         </div>
     </form>
+    <a href="http://127.0.0.1:8000/register"><button> Register </button></a>
 </div>

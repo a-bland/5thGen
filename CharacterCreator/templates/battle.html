@@ -1,5 +1,8 @@
 <script src="../../static/battle.js"></script>
 
+<head>
+    <link rel="icon" href="../static/assets/g5.jpg">
+</head>
 <div>
     <h1>Battle Simulator</h1>
     <p>CHARACTER NAME (Race Class)</p>
@@ -11,19 +14,21 @@
     <h4>Turn Order</h4>
     <label for="inventory">Inventory</label>
     <br />
-    <input type="text" id="inventory"></input>
+    <textarea cols="50" rows="5" id="inventory"></textarea>
     <br /><br />
     <label for="spellList">Spells</label>
     <br />
-    <input type="text" id="spellList"></input>
+    <textarea cols="50" rows="5" id="spellList"></textarea>
     <br /><br />
     <label for="spellSlots">Spell Slots</label>
     <br />
-    <input type="text" id="spellSlots"></input>
+    <ul id="spellSlots">
+        <li>First Level: <input type="number" min="0" max="4"></li>
+    </ul>
     <br /><br />
     <label for="statusEffects">Status Effects</label>
     <br />
-    <input type="text" id="statusEffects"></input>
+    <textarea cols="50" rows="5" id="statusEffects"></textarea>
     <form>
         <input type="radio" id="standard" defaultChecked="true" name="rollType"></input>
         <label for="standard"> Standard </label>

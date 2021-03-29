@@ -57,7 +57,7 @@ ROOT_URLCONF = 'GenFive.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['../CharacterCreator/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

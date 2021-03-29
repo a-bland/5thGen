@@ -9,7 +9,18 @@ from django.views.decorators.csrf import csrf_exempt
 
 
 def home(request):
-    return render(request, 'home.html')
+    parties = Parties.objects
+    characters = Character.objects
+    return render(request, 'home.html', {'parties': parties, 'characters': characters})
+
+
+def login(request):
+    users = User.objects
+    return render(request, 'login.html', {'users': users})
+
+
+def register(request):
+    return render(request, 'register.html')
 
 def login(request):
     return render(request, 'login.html')
@@ -20,14 +31,13 @@ def creation(request):
 
 
 def battle(request):
-    return render(request, 'battle.html')
+    parties = Parties.objects
+    characters = Character.objects
+    return render(request, 'battle.html', {'parties': parties, 'characters': characters})
 
-
-# from django.contrib.auth.models import User, Group
 
 class UserViewSet(viewsets.ModelViewSet):
     # API endpoint that allows users to be viewed or edited.
-    # queryset = User.objects.all().order_by('-date_joined')
     queryset = User.objects.all()
     serializer_class = UserSerializer
     permission_classes = [permissions.IsAuthenticated]

@@ -1,31 +1,63 @@
 <script src="../../static/home.js"></script>
-<link rel="stylesheet" href="./home.css">
+<!--<link rel="stylesheet" href="./home.css">-->
+<script>
+	function showPartyInfo() {
+		if (document.getElementById("partyInfo").style.display == "block")
+			document.getElementById("partyInfo").style.display = "none";
+		else
+			document.getElementById("partyInfo").style.display = "block"
+	}
+	function showPartyForm() {
+		if (document.getElementById("partyForm").style.display == "block")
+			document.getElementById("partyForm").style.display = "none";
+		else
+			document.getElementById("partyForm").style.display = "block";
+		//document.getElementById("cancelParty").style.display = "inline";
+	}
+</script>
 
-<div>
-	<h1>Gen Five</h1>
-	<p>Welcome to our battle simulator.</p>
-	<h2>Your Characters</h2>
+<head>
+	<link rel="icon" href="../static/assets/g5.jpg">
+</head>
 
-	<a href="/creation">
-		<button> Create a New Character </button>
-	</a>
-	<br /><br />
-	<h2>Your Parties</h2>
-	<form id="getParties" action="/parties/" method="GET">
-		<input type="submit" value="Display Parties">
-	</form>
-	<button onClick="showPartyForm()"> Create a Party </button>
-	<form id="createParty" style="display:none;" action="/parties/" method="POST" target="_blank">
-		Party name<input type="text" name="partyName"><br />
-		Player 1's email<input type="email" name="player1"><br />
-		Player 2's email<input type="email" name="player2"><br />
-		Player 3's email<input type="email" name="player3"><br />
-		Player 4's email<input type="email" name="player4"><br />
-		<input onClick="hidePartyForm();" type="submit" value="Create">
-		<button id="cancelParty" onClick="hidePartyForm()"> Cancel </button>
-	</form>
-	<br /><br /><br />
-	<a href="/battle">
-		<button> Start Battle </button>
-	</a>
-</div>
+<body>
+	<div style="text-align:center;">
+		<h1>Gen Five</h1>
+		<p>Welcome to our battle simulator.</p>
+		<h2>Your Characters</h2>
+		{% for character in characters.all %}
+		{{ character.name }}, {{character.race}} {{character.characterClass}}<br />
+		{% endfor %}
+		<br /><br />
+		<a href="/creation">
+			<button> Create a New Character </button>
+		</a>
+		<br /><br />
+		<h2>Your Parties</h2>
+		{% for party in parties.all %}
+		<button onClick="showPartyInfo()">{{ party.partyName }}</button><br />
+		<div id="partyInfo" style="display:none">
+			Player 1: {{party.player1}}<br />
+			Player 1: {{party.player2}}<br />
+			Player 1: {{party.player3}}<br />
+			Player 1: {{party.player4}}<br />
+			<a href="/battle"><button> Start Battle </button></a>
+		</div>
+		{% endfor %}
+		<br /><br />
+		<button onClick="showPartyForm()"> Create a Party </button>
+		<form id="partyForm" style="display:none;" action="/parties/" method="POST" enctype="multipart/form-data"
+			target="_blank">
+			Party name <input type="text" name="partyName"><br />
+			Player 1's email <input type="email" name="player1"><br />
+			Player 2's email <input type="email" name="player2"><br />
+			Player 3's email <input type="email" name="player3"><br />
+			Player 4's email <input type="email" name="player4"><br />
+			<input onClick="hidePartyForm();" type="submit" value="Create">
+		</form>
+		<br /><br /><br />
+		<a href="/login">
+			<button> Sign Out </button>
+		</a>
+	</div>
+</body>

@@ -46,6 +46,7 @@ class Character(models.Model):
     def get_characterClass(self):
         return self.characterClass
 
+<<<<<<< HEAD
     def get_characterProficiences(self):
         profList = [False for i in range(18)]
         profList[0] = self.athletics
@@ -85,6 +86,8 @@ class Character(models.Model):
 
     def get_character_equipment(self):
         return self.equipment  
+=======
+>>>>>>> latest
 
 class User(models.Model):
     username = models.CharField(max_length=100)
