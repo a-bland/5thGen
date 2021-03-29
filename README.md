@@ -82,7 +82,7 @@ While there are other products that individually offer the services our product 
 - [Velocity Chart](https://docs.google.com/spreadsheets/d/1zmuhoPPeO9SQrvBysmMswbhSMYx34nLcfIQ-MMtw9Ho/edit?usp=sharing)
 - [System Architecture](https://github.com/tazemaster/GenFive/blob/main/artifacts/architecture.md)
 - [Source Code](https://github.com/tazemaster/5thGen/tree/main/src)
-- [Product Demonstration] (https://youtu.be/2fJ4fWtejgs)
+- [Product Demonstration](https://youtu.be/2fJ4fWtejgs)
 
 ## Task Allocation
 
@@ -109,3 +109,41 @@ While there are other products that individually offer the services our product 
 - Liam: Added boiler plate code and continued efforts with Dynamodb table creation
 - Stephanie: Learning GraphQL for Python and D&D API. Noticed updated class diagram was not in GitHub so I put it in there.
 - David: Joined Gavin in learning Django, got a local app running, in the process of learning how to integrate react with Django
+
+# Sprint 7
+
+- [Trello Board](https://trello.com/b/LyoSdg5y/genfive)
+- [Burndown Chart](https://docs.google.com/spreadsheets/d/1ydDIiCTdacYRQR8fYd0A7m_4bHwZ8VrwFOkmBXNZUwo/edit?usp=sharing)
+- [Velocity Chart](https://docs.google.com/spreadsheets/d/1zmuhoPPeO9SQrvBysmMswbhSMYx34nLcfIQ-MMtw9Ho/edit?usp=sharing)
+- [System Architecture](https://github.com/tazemaster/GenFive/blob/main/artifacts/architecture.md)
+- [HTML Code](https://github.com/tazemaster/5thGen/tree/main/CharacterCreator/templates)
+- [JavaScript/Python Code](https://github.com/tazemaster/5thGen/tree/main/static)
+- [Tests](https://github.com/tazemaster/5thGen/blob/main/CharacterCreator/tests.py)
+- [Product Demonstration](https://youtu.be/_6WL4rfM5Z0)
+
+## Task Allocation
+
+- Gavin: Migrated project from Amplify to Lightsail + Django (w/ help from Annabel). Setup code to insert Characters into database from .json file, but wasn't able to send data from creation.js to insertDB.py to get the character creator working. 
+- Annabel: 
+- Liam: Learning GraphQL for Django
+- Stephanie: Learning GraphQL for Django.
+- David: Learning more Django throughout the week, helped with the switch to the current Django app
+
+# Sprint 8
+
+- [Trello Board](https://trello.com/b/LyoSdg5y/genfive)
+- [Burndown Chart](https://docs.google.com/spreadsheets/d/1h3uxTDJw8QW1DkgBFrCE2acRNJfGSgUXAh_QpoQSeb0/edit?usp=sharing)
+- [Velocity Chart](https://docs.google.com/spreadsheets/d/1zmuhoPPeO9SQrvBysmMswbhSMYx34nLcfIQ-MMtw9Ho/edit?usp=sharing)
+- [System Architecture](https://github.com/tazemaster/GenFive/blob/main/artifacts/architecture.md)
+- [HTML Code](https://github.com/tazemaster/5thGen/tree/main/CharacterCreator/templates)
+- [JavaScript/Python Code](https://github.com/tazemaster/5thGen/tree/main/static)
+- [Tests](https://github.com/tazemaster/5thGen/blob/main/CharacterCreator/tests.py)
+- [Product Demonstration](https://youtu.be/6Cl2FGz__FA)
+
+## Task Allocation
+
+- Gavin: Got the server live on Lightsail w/ Apache so others can visit page & did Burndown/Velocity Charts
+- Annabel: added login/register pages, made battle page reflect stats of one of our characters, displayed parties to user
+- Liam: Added test cases, made video demo, made project presentation slides
+- Stephanie: Fixed up Trello Board to reflect current progress.
+- David: Added test cases
