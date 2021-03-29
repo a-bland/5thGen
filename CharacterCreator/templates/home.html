@@ -35,19 +35,21 @@
 		<br /><br />
 		<h2>Your Parties</h2>
 		{% for party in parties.all %}
-		<button onClick="showPartyInfo()">{{ party.partyName }}</button><br />
+		<button onClick="showPartyInfo()">{{ party.partyName }}</button><br /><br />
 		<div id="partyInfo" style="display:none">
 			Player 1: {{party.player1}}<br />
 			Player 1: {{party.player2}}<br />
 			Player 1: {{party.player3}}<br />
 			Player 1: {{party.player4}}<br />
-			<a href="/battle"><button> Start Battle </button></a>
+			<a href="/battle"><button> Start Battle </button></a><br /><br />
 		</div>
 		{% endfor %}
 		<br /><br />
 		<button onClick="showPartyForm()"> Create a Party </button>
 		<form id="partyForm" style="display:none;" action="/parties/" method="POST" enctype="multipart/form-data"
 			target="_blank">
+			<input type="hidden" name="csrfmiddlewaretoken"
+				value="ciQWeOxMND7PxL0iRpMAeb3AhqNLauJksWjYTGx04jmiUkLUSekwPmQiHYFsq32P">
 			Party name <input type="text" name="partyName"><br />
 			Player 1's email <input type="email" name="player1"><br />
 			Player 2's email <input type="email" name="player2"><br />

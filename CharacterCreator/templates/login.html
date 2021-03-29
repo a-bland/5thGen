@@ -17,16 +17,17 @@
         novalidate="">
         <div>
             <label for="username">Username:</label><br>
-            <input type="text" id="username" name="username" value="annabel"><br /><br />
+            <input type="text" id="username" name="username"><br /><br />
             <label for="password">Password:</label><br>
             <input type="password" id="password" name="password"><br /><br />
         </div>
         <div class="form-actions">
+            <!--
             {% for user in users.all %}
             {% if username == user.username %} <h1>test</h1>
             {% else %}<p>different test</p>
             {% endif %}
-            {% endfor %}
+            {% endfor %} -->
             <button class="btn btn-primary js-tooltip" onClick="login()">Log In</button>
         </div>
     </form>

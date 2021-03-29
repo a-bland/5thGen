@@ -138,7 +138,7 @@ While there are other products that individually offer the services our product 
 - [HTML Code](https://github.com/tazemaster/5thGen/tree/main/CharacterCreator/templates)
 - [JavaScript/Python Code](https://github.com/tazemaster/5thGen/tree/main/static)
 - [Tests](https://github.com/tazemaster/5thGen/blob/main/CharacterCreator/tests.py)
-- [Product Demonstration]()
+- [Product Demonstration](https://youtu.be/6Cl2FGz__FA)
 
 ## Task Allocation
 
@@ -146,4 +146,4 @@ While there are other products that individually offer the services our product 
 - Annabel: added login/register pages, made battle page reflect stats of one of our characters, displayed parties to user
 - Liam: Added test cases, made video demo, made project presentation slides
 - Stephanie: Fixed up Trello Board to reflect current progress.
-- David: 
+- David: Added test cases
