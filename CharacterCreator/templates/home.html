@@ -1,23 +1,29 @@
-<script src="../../static/home.js"></script>
-<!--<link rel="stylesheet" href="./home.css">-->
-<script>
-	function showPartyInfo() {
-		if (document.getElementById("partyInfo").style.display == "block")
-			document.getElementById("partyInfo").style.display = "none";
-		else
-			document.getElementById("partyInfo").style.display = "block"
-	}
-	function showPartyForm() {
-		if (document.getElementById("partyForm").style.display == "block")
-			document.getElementById("partyForm").style.display = "none";
-		else
-			document.getElementById("partyForm").style.display = "block";
-		//document.getElementById("cancelParty").style.display = "inline";
-	}
-</script>
-
 <head>
+	<title>GenFive</title>
 	<link rel="icon" href="../static/assets/g5.jpg">
+	<link rel="stylesheet" href="../static/home.css">
+	<script>
+		function showPartyInfo(partyId) {
+			if (document.getElementById(partyId).style.display == "block")
+				document.getElementById(partyId).style.display = "none";
+			else
+				document.getElementById(partyId).style.display = "block"
+		}
+		function showPartyForm() {
+			if (document.getElementById("partyForm").style.display == "block")
+				document.getElementById("partyForm").style.display = "none";
+			else
+				document.getElementById("partyForm").style.display = "block";
+			//document.getElementById("cancelParty").style.display = "inline";
+		}
+		function showCharacterInfo(buttonId) {
+			if (document.getElementById(buttonId).style.display == "block")
+				document.getElementById(buttonId).style.display = "none";
+			else
+				document.getElementById(buttonId).style.display = "block";
+			//document.getElementById("cancelParty").style.display = "inline";
+		}
+	</script>
 </head>
 
 <body>
@@ -26,7 +32,13 @@
 		<p>Welcome to our battle simulator.</p>
 		<h2>Your Characters</h2>
 		{% for character in characters.all %}
-		{{ character.name }}, {{character.race}} {{character.characterClass}}<br />
+		<button onClick="showCharacterInfo('{{character.name}}')">{{ character.name }}</button><br />
+		<dialog id="{{character.name}}" style="display:none">Level {{character.level}}
+			{{character.race}} {{character.characterClass}}<br />
+			<button> Edit Character </button><br />
+			<button onClick="showCharacterInfo('{{character.name}}')"> Close </button>
+		</dialog>
+		<br />
 		{% endfor %}
 		<br /><br />
 		<a href="/creation">
@@ -35,8 +47,8 @@
 		<br /><br />
 		<h2>Your Parties</h2>
 		{% for party in parties.all %}
-		<button onClick="showPartyInfo()">{{ party.partyName }}</button><br /><br />
-		<div id="partyInfo" style="display:none">
+		<button onClick="showPartyInfo('{{party.partyName}}')">{{ party.partyName }}</button><br /><br />
+		<div id="{{party.partyName}}" style="display:none">
 			Player 1: {{party.player1}}<br />
 			Player 1: {{party.player2}}<br />
 			Player 1: {{party.player3}}<br />

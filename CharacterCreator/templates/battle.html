@@ -2,10 +2,12 @@
 
 <head>
     <link rel="icon" href="../static/assets/g5.jpg">
+    <title>Battle Simulator</title>
 </head>
 <div style="text-align:center;">
     <h1>Battle Simulator</h1>
-    <p>{{ character.name }} ({{character.race}} {{character.characterClass}}), member of {{party.partyName}}</p>
+    <p>{{ character.name }} (Level {{character.level}} {{character.race}} {{character.characterClass}}), member of
+        {{party.partyName}}</p>
     <img src="../static/assets/forest1.jpg" height="400" width="500" style="float: left;" />
     <h3 style="color:Tomato;">HP:</h3>
     <input type="number" max="{{character.hp}}" value="{{character.hp}}">

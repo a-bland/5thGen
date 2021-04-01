@@ -6,6 +6,7 @@ class Character(models.Model):
     player = models.CharField(max_length=100)
     race = models.CharField(max_length=25)
     characterClass = models.CharField(max_length=25)
+    level = models.IntegerField()
     intelligence = models.IntegerField()
     wisdom = models.IntegerField()
     charisma = models.IntegerField()
@@ -39,60 +40,19 @@ class Character(models.Model):
 
     def get_name(self):
         return self.name
-    
+
     def get_race(self):
         return self.race
-    
+
     def get_characterClass(self):
         return self.characterClass
 
-<<<<<<< HEAD
-    def get_characterProficiences(self):
-        profList = [False for i in range(18)]
-        profList[0] = self.athletics
-        profList[1] = self.acrobatics
-        profList[2] = self.sleightOfHand
-        profList[3] = self.stealth
-        profList[4] = self.arcana
-        profList[5] = self.history
-        profList[6] = self.investigation
-        profList[7] = self.nature
-        profList[8] = self.religion
-        profList[9] = self.animalHandling
-        profList[10] = self.insight
-        profList[11] = self.medicine
-        profList[12] = self.perception
-        profList[13] = self.survival
-        profList[14] = self.deception
-        profList[15] = self.intimidation
-        profList[16] = self.performance
-        profList[17] = self.persuasion
-        return profList
-
-    def get_character_hp(self):
-        return self.hp        
-
-    def get_character_ac(self):
-        return self.ac
-
-    def get_character_speed(self):
-        return self.speed
-
-    def get_character_spellSaveDC(self):
-        return self.spellSaveDC
-
-    def get_character_attackBonus(self):
-        return self.attackBonus
-
-    def get_character_equipment(self):
-        return self.equipment  
-=======
->>>>>>> latest
 
 class User(models.Model):
     username = models.CharField(max_length=100)
     email = models.CharField(max_length=100)
     password = models.CharField(max_length=100)
+
 
 class Parties(models.Model):
     partyName = models.CharField(max_length=100)
@@ -100,3 +60,29 @@ class Parties(models.Model):
     player2 = models.CharField(max_length=100)
     player3 = models.CharField(max_length=100)
     player4 = models.CharField(max_length=100)
+
+
+class Spells(models.Model):
+    name = models.CharField(max_length=100)
+    desc = models.CharField(max_length=1000)
+    higher_level = models.CharField(max_length=100)
+    spellRange = models.CharField(max_length=100)
+    components = models.CharField(max_length=200)
+    material = models.CharField(max_length=200)
+    ritual = models.BooleanField()
+    duration = models.CharField(max_length=100)
+    concentration = models.BooleanField()
+    castingTime = models.CharField(max_length=100)
+    level = models.IntegerField()
+    attack_type = models.CharField(max_length=20)
+    damageType = models.CharField(max_length=100)
+    savingThrow = models.CharField(max_length=25)
+
+    bard = models.BooleanField()
+    cleric = models.BooleanField()
+    druid = models.BooleanField()
+    paladin = models.BooleanField()
+    ranger = models.BooleanField()
+    sorcerer = models.BooleanField()
+    warlock = models.BooleanField()
+    wizard = models.BooleanField()

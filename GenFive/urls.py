@@ -11,6 +11,7 @@ router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'parties', views.PartiesViewSet)
 router.register(r'characters', views.CharacterViewSet)
+router.register(r'spells', views.SpellsViewSet)
 
 urlpatterns = [
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),

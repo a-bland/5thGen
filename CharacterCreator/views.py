@@ -1,10 +1,10 @@
 from rest_framework import viewsets
-from GenFive.serializers import UserSerializer, PartiesSerializer, CharacterSerializer
+from GenFive.serializers import UserSerializer, PartiesSerializer, CharacterSerializer, SpellsSerializer
 from rest_framework import permissions
 from django.shortcuts import render
 from django.http import Http404
 from django.contrib.auth.models import User, Group
-from CharacterCreator.models import Character, User, Parties
+from CharacterCreator.models import Character, User, Parties, Spells
 from django.views.decorators.csrf import csrf_exempt
 
 
@@ -21,6 +21,7 @@ def login(request):
 
 def register(request):
     return render(request, 'register.html')
+
 
 def login(request):
     return render(request, 'login.html')
@@ -53,4 +54,10 @@ class PartiesViewSet(viewsets.ModelViewSet):
 class CharacterViewSet(viewsets.ModelViewSet):
     queryset = Character.objects.all()
     serializer_class = CharacterSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+
+class SpellsViewSet(viewsets.ModelViewSet):
+    queryset = Spells.objects.all()
+    serializer_class = SpellsSerializer
     permission_classes = [permissions.IsAuthenticated]
